@@ -353,8 +353,8 @@ Transform:
   m_Children:
   - {fileID: 1158202234}
   - {fileID: 162231153}
-  - {fileID: 1166621050}
   - {fileID: 1218802865}
+  - {fileID: 1166621050}
   - {fileID: 441086983}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1156,6 +1156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 255990975}
+  - component: {fileID: 255990976}
   m_Layer: 0
   m_Name: Wall (1)
   m_TagString: Untagged
@@ -1178,6 +1179,20 @@ Transform:
   m_Father: {fileID: 511812661}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!64 &255990976
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255990974}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
 --- !u!1001 &261094228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2229,11 +2244,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bd7b40e5b828884dbc8f918b741f871, type: 3}
---- !u!4 &441086983 stripped
+--- !u!4 &441086983
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 441086982}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220338917}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 740827087}
+  m_Father: {fileID: 57291918}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &460670645
 GameObject:
   m_ObjectHideFlags: 0
@@ -4024,6 +4049,36 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 931627042}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &740827086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 441086982}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 740827087}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &740827087
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 441086982}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740827086}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 441086983}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &754600500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7576,6 +7631,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1728651168}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1220338917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 441086982}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441086983}
+  m_Layer: 0
+  m_Name: mob_WaterCooler_A (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &1224815636
 PrefabInstance:
   m_ObjectHideFlags: 0
