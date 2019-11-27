@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OutlookWindow : ComputerWindow
+public class MailsWindow : ComputerWindow
 {
-    void Start()
+    protected override void Start()
     {
-        
+        base.Start();
     }
 
     void Update()

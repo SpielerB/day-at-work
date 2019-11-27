@@ -1,6 +1,6 @@
-﻿public interface iInteraction
+﻿public interface IInteraction
 {
-    void OnActivate();
+    void Activate();
 
     bool IsActive();
 }
