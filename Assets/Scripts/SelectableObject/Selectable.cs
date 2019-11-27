@@ -9,11 +9,9 @@ public class Selectable : Outline
     private float normWidth;
 
     private Color spezColor;
-    private float spezWidth = 20;
-
+    private float spezWidth;
     private bool active;
     private bool isLookedAt;
-
 
     private Selectable selected;
     private IInteraction interaction;
@@ -23,6 +21,7 @@ public class Selectable : Outline
         selected = GetComponent<Selectable>();
         normColor = selected.OutlineColor;
         normWidth = selected.OutlineWidth;
+        spezWidth = normWidth + 5;
         spezColor = new Color(normColor.r, normColor.g + 1, normColor.b);
         interaction = GetComponent<IInteraction>();
 
