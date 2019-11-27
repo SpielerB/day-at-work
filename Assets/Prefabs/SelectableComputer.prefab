@@ -370,8 +370,8 @@ GameObject:
   - component: {fileID: 1075191392573762568}
   - component: {fileID: 1075191392574893768}
   - component: {fileID: 1075191392572602070}
-  - component: {fileID: 1075191392572602068}
   - component: {fileID: 6362723927104634781}
+  - component: {fileID: 3330297039918887385}
   m_Layer: 0
   m_Name: SelectableComputer
   m_TagString: Untagged
@@ -456,34 +456,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 49ddef57dd87da2489028c9f6666f2fc, type: 3}
---- !u!114 &1075191392572602068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075191392572633096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: PointerClick
-          m_Mode: 0
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &6362723927104634781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,7 +468,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8a0e61571dd3ed4e82c16d141c190e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenCanvas: {fileID: 0}
+  screenCanvas: {fileID: 1980207211783766451}
+--- !u!114 &3330297039918887385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075191392572633096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 391488fd9f7bb6c4e873039bda9df13c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0, b: 0, a: 0}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1643261057197588882
 GameObject:
   m_ObjectHideFlags: 0
@@ -3258,12 +3248,36 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6327574776563670373, guid: 96421b34c9b79cd4b8a93536010a2f42,
+    - target: {fileID: 9149643540471946353, guid: 96421b34c9b79cd4b8a93536010a2f42,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
+        type: 3}
+      propertyPath: title
+      value: Work schedule
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
+        type: 3}
+      propertyPath: from
+      value: markus.meier@corp.ch
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
+        type: 3}
+      propertyPath: content
+      value: "Dear Mrs. M\xFCller\r\n\r\nAs discussed, I will send you the requested
+        documents in the appendix. \r\nI ask you to prepare them for the participants
+        of the coming week and to give me a short feedback regarding position 3 of
+        the first document whether this is okay for you as noted.\r\n\r\nYours sincerely\r\nMarkus
+        Meier"
+      objectReference: {fileID: 0}
+    - target: {fileID: 812777765826894081, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: m_textInfo.lineCount
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 812777765826894081, guid: 96421b34c9b79cd4b8a93536010a2f42,
+    - target: {fileID: 6327574776563670373, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: m_textInfo.lineCount
       value: 1
