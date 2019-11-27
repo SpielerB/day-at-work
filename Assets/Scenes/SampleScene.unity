@@ -13410,17 +13410,17 @@ PrefabInstance:
     - target: {fileID: 1075191392572992552, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1075191392572992552, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1075191392572992552, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1075191392572992552, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
         type: 3}
@@ -13446,6 +13446,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684691844756140264, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684691844756140264, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
+        type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7486813573623856987, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
         type: 3}

@@ -198,8 +198,10 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\ComputerScreen.cs" />
+    <Compile Include="Assets\Scripts\ComputerWindow.cs" />
     <Compile Include="Assets\Scripts\FloatingSprite.cs" />
     <Compile Include="Assets\Scripts\MovementNode.cs" />
+    <Compile Include="Assets\Scripts\OutlookWindow.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\SelectableComputer.cs" />
     <Compile Include="Assets\Scripts\SimulationController.cs" />
