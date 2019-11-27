@@ -1,15 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class MovementNode : MonoBehaviour
 {
-
     public Image interactionTimerIndicator;
     public PlayerController player;
     [Tooltip("How many seconds until the player moves to this MovementPoint")]
-    public float movementDelay = 2f;
+    public float movementDelay = 1.5f;
     
     private float step;
     private float timer;
@@ -43,5 +43,4 @@ public class MovementNode : MonoBehaviour
             interactionTimerIndicator.fillAmount = 0;
         }
     }
-
 }

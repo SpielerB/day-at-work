@@ -197,27 +197,48 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\ComputerScreen.cs" />
     <Compile Include="Assets\Scripts\FloatingSprite.cs" />
     <Compile Include="Assets\Scripts\MovementNode.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\SelectableComputer.cs" />
+    <Compile Include="Assets\Scripts\SimulationController.cs" />
     <Compile Include="Assets\StarfieldMaterials\Scripts\Move.cs" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrController.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
     <None Include="Assets\GoogleVR\Beta\Shaders\GvrSeeThroughUI.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-6DOF.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\GoogleVR\Shaders\Video\VideoUnlitShader.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTextureOverlay.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrControllerReticle.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\StarfieldMaterials\README\Readme.txt" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Daydream.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\GoogleVR\Demos\Shaders\HelloVR\HelloVRUnlitGrayscaleToColor.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrReticleShader.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\GoogleVR\Shaders\GvrUIOverlay.shader" />
     <None Include="Assets\GoogleVR\Plugins\Android\proguard-gvr.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Cardboard.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Unity Projects/killroy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -248,6 +269,9 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>D:/Unity Projects/killroy/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="BuildPostProcessGVRPods">
+      <HintPath>D:/Unity Projects/killroy/Library/ScriptAssemblies/BuildPostProcessGVRPods.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>D:/Unity Projects/killroy/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
@@ -293,9 +317,6 @@
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>D:/Unity Projects/killroy/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="BuildPostProcessGVRPods">
-      <HintPath>D:/Unity Projects/killroy/Library/ScriptAssemblies/BuildPostProcessGVRPods.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Programme/Unity/2019.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -468,6 +489,9 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>D:/Programme/Unity/2019.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>D:/Unity Projects/killroy/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/Unity Projects/killroy/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -476,9 +500,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>D:/Unity Projects/killroy/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.ProtocolBuffers">
-      <HintPath>D:/Unity Projects/killroy/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:/Programme/Unity/2019.2.12f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
