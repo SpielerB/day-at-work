@@ -11,14 +11,14 @@ public class SoundInteraction : MonoBehaviour, IInteraction
         return true;
     }
 
-    public void Activate()
-    {
-        audioSource.Play();
-    }
-
     public bool IsActive()
     {
         return audioSource.isPlaying;
+    }
+
+    public void Activate()
+    {
+        audioSource.Play();
     }
 
 }

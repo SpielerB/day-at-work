@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class Selectable : Outline
 {
-    private Color normColor;
+    private Color normColor = Color.white;
     private float normWidth;
 
     private Color spezColor;

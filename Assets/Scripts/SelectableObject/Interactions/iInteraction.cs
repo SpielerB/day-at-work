@@ -2,7 +2,8 @@
 {
     bool CanActivate();
 
+    bool IsActive();
+
     void Activate();
 
-    bool IsActive();
 }
