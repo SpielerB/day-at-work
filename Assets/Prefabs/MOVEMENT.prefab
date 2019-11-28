@@ -387,11 +387,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890235890382 stripped
@@ -522,11 +517,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890181850066 stripped
@@ -657,11 +647,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890114738819 stripped
@@ -792,11 +777,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890055124688 stripped
@@ -927,11 +907,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890024227449 stripped
@@ -1062,11 +1037,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890487320732 stripped
@@ -1197,11 +1167,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890468373491 stripped
@@ -1332,11 +1297,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890323866844 stripped
@@ -1467,11 +1427,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890276267989 stripped
@@ -1602,11 +1557,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890303142340 stripped
@@ -1640,7 +1590,7 @@ PrefabInstance:
     - target: {fileID: 8082462389938791774, guid: 5a52f32e146f03b44a10362a298a277b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.64
+      value: -10.756
       objectReference: {fileID: 0}
     - target: {fileID: 8082462389938791774, guid: 5a52f32e146f03b44a10362a298a277b,
         type: 3}
@@ -1685,7 +1635,7 @@ PrefabInstance:
     - target: {fileID: 8082462389938791774, guid: 5a52f32e146f03b44a10362a298a277b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7.61
+      value: -6.844
       objectReference: {fileID: 0}
     - target: {fileID: 8082462389938791774, guid: 5a52f32e146f03b44a10362a298a277b,
         type: 3}
@@ -1737,11 +1687,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890294812519 stripped
@@ -1872,11 +1817,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890738472761 stripped
@@ -2007,11 +1947,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890644434966 stripped
@@ -2142,11 +2077,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890547273464 stripped
@@ -2277,11 +2207,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345891065744778 stripped
@@ -2412,11 +2337,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890924080123 stripped
@@ -2547,11 +2467,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345890853421254 stripped
@@ -2682,16 +2597,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: movementDelay
-      value: 1.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345891207076641 stripped
@@ -2822,11 +2727,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345891126574544 stripped
@@ -2957,11 +2857,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345891130490497 stripped
@@ -3092,11 +2987,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345891097756704 stripped
@@ -3221,11 +3111,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
         type: 3}
@@ -3362,11 +3247,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345891588392426 stripped
@@ -3497,11 +3377,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345891538073272 stripped
@@ -3632,16 +3507,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082462389938791744, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: m_Delegates.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345891484194734 stripped
@@ -3772,11 +3637,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345891388998102 stripped
@@ -3907,11 +3767,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345891747119551 stripped
@@ -4042,11 +3897,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345891657840496 stripped
@@ -4177,11 +4027,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345892144656583 stripped
@@ -4312,11 +4157,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345892138552912 stripped
@@ -4447,11 +4287,6 @@ PrefabInstance:
       propertyPath: interactionTimerIndicator
       value: 
       objectReference: {fileID: 175985998578398510}
-    - target: {fileID: 8082462389938791775, guid: 5a52f32e146f03b44a10362a298a277b,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a52f32e146f03b44a10362a298a277b, type: 3}
 --- !u!224 &8240345892014373756 stripped
