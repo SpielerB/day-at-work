@@ -7,17 +7,27 @@ using UnityEngine.UI;
 public class MovementNode : MonoBehaviour
 {
     public Image interactionTimerIndicator;
-    public PlayerController player;
     [Tooltip("How many seconds until the player moves to this MovementPoint")]
     public float movementDelay = 1.5f;
     
     private float step;
     private float timer;
     private bool lookingAt;
+    private PlayerController player;
 
     private void Start()
     {
         step = 1f / movementDelay;
+        player = FindObjectOfType<PlayerController>();
+
+        var trigger = gameObject.AddComponent<EventTrigger>();
+        var pointerEnter = new EventTrigger.Entry { eventID = EventTriggerType.PointerEnter };
+        pointerEnter.callback.AddListener(d => LookAt(true));
+        trigger.triggers.Add(pointerEnter);
+
+        var pointerExit = new EventTrigger.Entry { eventID = EventTriggerType.PointerExit };
+        pointerExit.callback.AddListener(d => LookAt(false));
+        trigger.triggers.Add(pointerExit);
     }
 
     private void Update()
@@ -30,11 +40,11 @@ public class MovementNode : MonoBehaviour
             return;
         }
         player.MoveTo(this);
-        SetLookingAt(false);
+        LookAt(false);
         interactionTimerIndicator.fillAmount = 0;
     }
 
-    public void SetLookingAt(bool look)
+    public void LookAt(bool look)
     {
         lookingAt = look;
         timer = 0;
