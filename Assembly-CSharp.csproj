@@ -196,6 +196,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\ComputerScreen.cs" />
     <Compile Include="Assets\Scripts\FloatingSprite.cs" />
@@ -204,15 +205,14 @@
     <Compile Include="Assets\Scripts\SelectableComputer.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\Interactions\iInteraction.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\Interactions\SoundInteraction.cs" />
-    <Compile Include="Assets\Scripts\SelectableObject\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\Selectable.cs" />
     <Compile Include="Assets\Scripts\SimulationController.cs" />
     <Compile Include="Assets\StarfieldMaterials\Scripts\Move.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\Scripts\SelectableObject\QuickOutline\Resources\Shaders\OutlineFill.shader" />
+    <None Include="Assets\SampleScenes\Scripts\QuickOutline\Resources\Shaders\OutlineFill.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
-    <None Include="Assets\Scripts\SelectableObject\QuickOutline\Readme.txt" />
+    <None Include="Assets\SampleScenes\Scripts\QuickOutline\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
@@ -233,7 +233,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\StarfieldMaterials\README\Readme.txt" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Daydream.xml" />
-    <None Include="Assets\Scripts\SelectableObject\QuickOutline\Resources\Shaders\OutlineMask.shader" />
+    <None Include="Assets\SampleScenes\Scripts\QuickOutline\Resources\Shaders\OutlineMask.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\GoogleVR\Demos\Shaders\HelloVR\HelloVRUnlitGrayscaleToColor.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrReticleShader.shader" />
@@ -276,9 +276,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>D:/Project/killroy/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="BuildPostProcessGVRPods">
-      <HintPath>D:/Project/killroy/Library/ScriptAssemblies/BuildPostProcessGVRPods.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>D:/Project/killroy/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
@@ -324,6 +321,9 @@
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>D:/Project/killroy/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="BuildPostProcessGVRPods">
+      <HintPath>D:/Project/killroy/Library/ScriptAssemblies/BuildPostProcessGVRPods.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
