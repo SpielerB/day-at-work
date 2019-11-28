@@ -62,10 +62,11 @@ public class Outline : MonoBehaviour
     private Mode outlineMode = Mode.OutlineVisible;
 
     [SerializeField]
-    private Color outlineColor;
+    private Color outlineColor = new Color(48f/255,148f/255,1);
+      
 
     [SerializeField, Range(0f, 20f)]
-    private float outlineWidth = 2f;
+    private float outlineWidth = 15f;
 
     [Header("Optional")]
 
