@@ -5,8 +5,8 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: base
-    2100002: Material.003
+    2100000: Material.003
+    2100002: base
     2100004: Material.002
     2100006: Material.001
     2100008: Material.004
