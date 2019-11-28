@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Selectable : Outline
 {
@@ -9,13 +10,11 @@ public class Selectable : Outline
 
     private Color spezColor;
     private float spezWidth;
-    
     private bool active;
     private bool isLookedAt;
-   
 
     private Selectable selected;
-    private iInteraction interaction;
+    private IInteraction interaction;
 
     private void Start()
     {
@@ -24,10 +23,23 @@ public class Selectable : Outline
         normWidth = selected.OutlineWidth;
         spezWidth = normWidth + 5;
         spezColor = new Color(normColor.r, normColor.g + 1, normColor.b);
-        interaction = GetComponent<iInteraction>();
+        interaction = GetComponent<IInteraction>();
+
+        var trigger = gameObject.AddComponent<EventTrigger>();
+        var pointerEnter = new EventTrigger.Entry { eventID = EventTriggerType.PointerEnter };
+        pointerEnter.callback.AddListener(d => LookAt(true));
+        trigger.triggers.Add(pointerEnter);
+
+        var pointerExit = new EventTrigger.Entry { eventID = EventTriggerType.PointerExit };
+        pointerExit.callback.AddListener(d => LookAt(false));
+        trigger.triggers.Add(pointerExit);
+
+        var pointerClick = new EventTrigger.Entry { eventID = EventTriggerType.PointerClick };
+        pointerClick.callback.AddListener(d => PointerClick());
+        trigger.triggers.Add(pointerClick);
     }
 
-    private void updateOutline()
+    private void UpdateOutline()
     {
         if (isLookedAt || active)
         {
@@ -46,25 +58,23 @@ public class Selectable : Outline
         if (active && !interaction.IsActive())
         {
             active = false;
-            updateOutline();
+            UpdateOutline();
         }
         base.Update();
     }
 
-    public void OnLookAt(bool isLookedAt)
+    public void LookAt(bool isLookedAt)
     {
         this.isLookedAt = isLookedAt;
-        updateOutline();
+        UpdateOutline();
     }
 
-    public void OnPointerClick()
+    public void PointerClick()
     {
-        if (!active)
-        {
-            interaction.OnActivate();
-            active = true;
-            updateOutline();
-        }
+        if (active) return;
+        interaction.Activate();
+        active = true;
+        UpdateOutline();
 
     }
 

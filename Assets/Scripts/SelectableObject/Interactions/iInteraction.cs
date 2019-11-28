@@ -1,8 +1,7 @@
-﻿public interface iInteraction
+﻿public interface IInteraction
 {
     bool IsActive();
     
-    void OnActivate();
+    void Activate();
 
-    
 }
