@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 
     public MovementNode initialMovementPoint;
 
-    private MovementNode currentMovementPoint;
+    public MovementNode CurrentMovementPoint { get; private set; }
 
     private void Start()
     {
@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             transform.Translate(-transform.position.x, 0, -transform.position.z);
+            CurrentMovementPoint = null;
         }
     }
 
@@ -35,13 +36,13 @@ public class PlayerController : MonoBehaviour
         var origin = transform.position;
         transform.Translate(target.x - origin.x, 0, target.z - origin.z, Space.World);
 
-        if (currentMovementPoint != null)
+        if (CurrentMovementPoint != null)
         {
-            currentMovementPoint.gameObject.SetActive(true);
+            CurrentMovementPoint.gameObject.SetActive(true);
         }
 
         point.gameObject.SetActive(false);
-        currentMovementPoint = point;
+        CurrentMovementPoint = point;
     }
 
     private void Update()
