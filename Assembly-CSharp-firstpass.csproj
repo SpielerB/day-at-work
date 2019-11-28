@@ -222,9 +222,6 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>D:/Project/killroy/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="BuildPostProcessGVRPods">
-      <HintPath>D:/Project/killroy/Library/ScriptAssemblies/BuildPostProcessGVRPods.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>D:/Project/killroy/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
@@ -269,6 +266,9 @@
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>D:/Project/killroy/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="BuildPostProcessGVRPods">
+      <HintPath>D:/Project/killroy/Library/ScriptAssemblies/BuildPostProcessGVRPods.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
