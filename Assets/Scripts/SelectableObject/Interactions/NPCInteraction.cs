@@ -23,5 +23,9 @@ public class NPCInteraction : IInteraction
     {
         return isActive;
     }
-   
+
+    public bool CanActivate()
+    {
+        throw new System.NotImplementedException();
+    }
 }
