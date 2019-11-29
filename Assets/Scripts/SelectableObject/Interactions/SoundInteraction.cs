@@ -5,10 +5,24 @@ using UnityEngine;
 public class SoundInteraction : MonoBehaviour, IInteraction
 {
     public AudioSource audioSource;
+    public MovementNode requiredPosition;
+
+    private PlayerController player;
+    private PlayerController Player
+    {
+        get
+        {
+            if (player == null)
+            {
+                player = FindObjectOfType<PlayerController>();
+            }
+            return player;
+        }
+    }
 
     public bool CanActivate()
     {
-        return true;
+        return requiredPosition != null && requiredPosition == Player.CurrentMovementPoint;
     }
 
     public bool IsActive()
