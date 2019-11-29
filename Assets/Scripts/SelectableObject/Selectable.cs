@@ -41,7 +41,7 @@ public class Selectable : Outline
 
     private void UpdateOutline()
     {
-        if (isLookedAt || active)
+        if (isLookedAt && interaction.CanActivate() || active)
         {
             selected.OutlineColor = spezColor;
             selected.OutlineWidth = spezWidth;
@@ -71,7 +71,7 @@ public class Selectable : Outline
 
     public void PointerClick()
     {
-        if (active) return;
+        if (active || !interaction.CanActivate()) return;
         interaction.Activate();
         active = true;
         UpdateOutline();

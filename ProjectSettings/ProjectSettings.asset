@@ -633,6 +633,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Collab: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -653,10 +654,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: c8c7b80e-46cf-41e3-8dc4-a3f848c1beda
+  cloudProjectId: 75272a78-dba8-4838-8b44-a2468ea95610
   framebufferDepthMemorylessMode: 0
   projectName: killroy
-  organizationId: marvinwyss1
+  organizationId: spielerb
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
