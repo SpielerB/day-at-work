@@ -13,7 +13,12 @@ public class SimulationController : MonoBehaviour
 
     private void Start()
     {
-        now = DateTime.Now.Date.AddHours(startHour ?? 9).AddMinutes(startMinute ?? 0);
+        now = DateTime.Now.Date.AddHours(startHour ?? 7).AddMinutes(startMinute ?? 50);
+    }
+
+    public DateTime GetTime()
+    {
+        return now;
     }
 
     public string GetTimeString()
@@ -26,9 +31,20 @@ public class SimulationController : MonoBehaviour
         return now.ToString("dd.MM.yyyy");
     }
 
-    public void Advance()
+    public void AdvanceTime(uint hour, uint minute)
     {
-        now = now.AddMinutes(1);
+        now = now.AddHours(hour).AddMinutes(minute);
+    }
+
+    public void SetTime(uint hour, uint minute)
+    {
+        now = now.Date.AddHours(hour).AddMinutes(minute);
+
+    }
+
+    public void EndSimulation()
+    {
+        Application.Quit();
     }
 
 }

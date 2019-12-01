@@ -1,16 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Tasks;
 using UnityEngine;
 
 public class MailsWindow : ComputerWindow
 {
-    protected override void Start()
+
+    private ComputerInteractionMailTask mailTask;
+
+    private ComputerInteractionMailTask MailTask
     {
-        base.Start();
+        get
+        {
+            if (mailTask == null)
+            {
+                mailTask = FindObjectOfType<ComputerInteractionMailTask>();
+            }
+
+            return mailTask;
+        }
     }
 
-    void Update()
-    {
-        
-    }
+    public override bool CanClose() => !MailTask.IsActive();
 }

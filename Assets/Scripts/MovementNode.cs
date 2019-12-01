@@ -15,10 +15,22 @@ public class MovementNode : MonoBehaviour
     private bool lookingAt;
     private PlayerController player;
 
+    private PlayerController Player
+    {
+        get
+        {
+            if (player == null)
+            {
+                player = FindObjectOfType<PlayerController>();
+            }
+
+            return player;
+        }
+    }
+
     private void Start()
     {
         step = 1f / movementDelay;
-        player = FindObjectOfType<PlayerController>();
 
         var trigger = gameObject.AddComponent<EventTrigger>();
         var pointerEnter = new EventTrigger.Entry { eventID = EventTriggerType.PointerEnter };
@@ -39,7 +51,7 @@ public class MovementNode : MonoBehaviour
             timer += Time.deltaTime;
             return;
         }
-        player.MoveTo(this);
+        Player.MoveTo(this);
         LookAt(false);
         interactionTimerIndicator.fillAmount = 0;
     }

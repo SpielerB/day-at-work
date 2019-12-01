@@ -470,6 +470,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screenCanvas: {fileID: 1980207211783766451}
   requiredMovementNode: {fileID: 0}
+  mailsWindow: {fileID: 0}
+  mailController: {fileID: 0}
 --- !u!114 &3330297039918887385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,8 +485,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 0, b: 0, a: 0}
-  outlineWidth: 2
+  outlineColor: {r: 0.1882353, g: 0.5803922, b: 1, a: 1}
+  outlineWidth: 15
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -605,7 +607,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2220692214706135362}
+      - m_Target: {fileID: 5190177935662362613}
         m_MethodName: Close
         m_Mode: 1
         m_Arguments:
@@ -2013,7 +2015,7 @@ GameObject:
   - component: {fileID: 636265922860813311}
   - component: {fileID: 5765070086021767167}
   - component: {fileID: 9021355236488980320}
-  - component: {fileID: 6006753308060616071}
+  - component: {fileID: 993748409815672827}
   m_Layer: 0
   m_Name: EditorWindow
   m_TagString: Untagged
@@ -2182,7 +2184,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 0
---- !u!114 &6006753308060616071
+--- !u!114 &993748409815672827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2191,7 +2193,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3582938428673885583}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec731557a28d14c439990f47b720955f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a2db040fa8f75d428cb568a005da6dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3890976033350637545
@@ -2205,7 +2207,6 @@ GameObject:
   - component: {fileID: 3740909154250434259}
   - component: {fileID: 8474745838447663669}
   - component: {fileID: 4496390019428345799}
-  - component: {fileID: 2220692214706135362}
   - component: {fileID: 6061134973257083311}
   - component: {fileID: 6817813275181609571}
   - component: {fileID: 2112947872700528903}
@@ -2213,6 +2214,7 @@ GameObject:
   - component: {fileID: 2930085106367621042}
   - component: {fileID: 8499560586736488045}
   - component: {fileID: 2629963322617767571}
+  - component: {fileID: 5190177935662362613}
   m_Layer: 0
   m_Name: MailsWindow
   m_TagString: Untagged
@@ -2288,18 +2290,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &2220692214706135362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890976033350637545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9212f16413a948541834ee231343bcff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &6061134973257083311
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2414,6 +2404,18 @@ MonoBehaviour:
   mailFromContainer: {fileID: 161205323260854434}
   mailFromText: {fileID: 4283646482184222914}
   noMailSelectedText: {fileID: 3651657382141653667}
+--- !u!114 &5190177935662362613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890976033350637545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ae88c539ef83f4ba6ba95600c4888e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5777965916074522396
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,7 +3014,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6006753308060616071}
+      - m_Target: {fileID: 0}
         m_MethodName: Close
         m_Mode: 1
         m_Arguments:
@@ -3473,6 +3475,11 @@ PrefabInstance:
         of the coming week and to give me a short feedback regarding position 3 of
         the first document whether this is okay for you as noted.\r\n\r\nYours sincerely\r\nMarkus
         Meier"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
+        type: 3}
+      propertyPath: canBeOpened
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9149643540471946353, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
