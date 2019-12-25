@@ -48,7 +48,7 @@ namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
                 //foreach (char d in c)
                 //    g += "[" + d + "]";
 
-                Debug.Log(g);
+                //Debug.Log(g);
                 String[] p = c.Trim().Split(';');
 
                 //messed up Unity text editor fix
