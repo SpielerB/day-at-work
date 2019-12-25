@@ -43,10 +43,16 @@ namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
                 }
                 String c = elemns.Dequeue();
 
+
+                //string g = "";
+                //foreach (char d in c)
+                //    g += "[" + d + "]";
+
+                Debug.Log(g);
                 String[] p = c.Trim().Split(';');
 
-
-                if (c[0] == 'C')
+                //messed up Unity text editor fix
+                if (c[0]=='C'&&c.Length<4)
                 {
                     if (depth == 0)
                     {
@@ -65,6 +71,7 @@ namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
                         return null;
                     }
                 }
+
 
                 return new DialogueTree[] { new DialogueTree(p[0], p[1], GetTree(elemns, depth)) };
 
@@ -103,7 +110,7 @@ namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
                 root = DialogueTree.GetTree(q, 0)[0];
             }
             current = root;
-
+            
 
 
 
