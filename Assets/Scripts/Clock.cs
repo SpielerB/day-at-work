@@ -1,35 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Diagnostics.CodeAnalysis;
 using TMPro;
 using UnityEngine;
 
-public class Clock : MonoBehaviour
+namespace Assets.Scripts
 {
-
-    private TextMeshProUGUI textMesh;
-    private SimulationController simulationController;
-
-    private SimulationController SimulationController
+    public class Clock : MonoBehaviour
     {
-        get
+
+        private TextMeshProUGUI textMesh;
+        private SimulationController simulationController;
+
+        private SimulationController SimulationController
         {
-            if (simulationController == null)
+            get
             {
-                simulationController = FindObjectOfType<SimulationController>();
+                if (simulationController == null)
+                {
+                    simulationController = FindObjectOfType<SimulationController>();
+                }
+
+                return simulationController;
             }
-
-            return simulationController;
         }
-    }
 
-    private void Start()
-    {
-        textMesh = GetComponent<TextMeshProUGUI>();
-        textMesh.text = SimulationController.GetTimeString();
-    }
+        [SuppressMessage("ReSharper", "UnusedMember.Local")]
+        private void Start()
+        {
+            textMesh = GetComponent<TextMeshProUGUI>();
+            textMesh.text = SimulationController.GetTimeString();
+        }
 
-    private void Update()
-    {
-        textMesh.text = SimulationController.GetTimeString();
+        [SuppressMessage("ReSharper", "UnusedMember.Local")]
+        private void Update()
+        {
+            textMesh.text = SimulationController.GetTimeString();
+        }
     }
 }

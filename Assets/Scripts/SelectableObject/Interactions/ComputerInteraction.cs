@@ -1,119 +1,120 @@
 ﻿using Assets.Scripts.Computer;
-using Assets.Scripts.SelectableObject.Interactions;
 using Assets.Scripts.Tasks;
-using UnityEngine;
 
-public class ComputerInteraction : TaskInteraction
+namespace Assets.Scripts.SelectableObject.Interactions
 {
-
-    public MovementNode requiredMovementNode;
-
-    private PlayerController player;
-    private InteractionTask mailTask;
-    private InteractionTask documentTask;
-    private MailsWindow mailsWindow;
-    private MailController mailController;
-    private ComputerScreen computerScreen;
-
-    private PlayerController Player
+    public class ComputerInteraction : TaskInteraction
     {
-        get
+
+        public MovementNode requiredMovementNode;
+
+        private PlayerController player;
+        private InteractionTask mailTask;
+        private InteractionTask documentTask;
+        private MailsWindow mailsWindow;
+        private MailController mailController;
+        private ComputerScreen computerScreen;
+
+        private PlayerController Player
         {
-            if (player == null)
+            get
             {
-                player = FindObjectOfType<PlayerController>();
+                if (player == null)
+                {
+                    player = FindObjectOfType<PlayerController>();
+                }
+
+                return player;
             }
-
-            return player;
         }
-    }
-    private InteractionTask MailTask
-    {
-        get
+        private InteractionTask MailTask
         {
-            if (mailTask == null)
+            get
             {
-                mailTask = FindObjectOfType<ComputerInteractionMailTask>();
+                if (mailTask == null)
+                {
+                    mailTask = FindObjectOfType<ComputerInteractionMailTask>();
+                }
+
+                return mailTask;
             }
-
-            return mailTask;
         }
-    }
-    private InteractionTask DocumentTask
-    {
-        get
+        private InteractionTask DocumentTask
         {
-            if (documentTask == null)
+            get
             {
-                documentTask = FindObjectOfType<ComputerInteractionDocumentTask>();
+                if (documentTask == null)
+                {
+                    documentTask = FindObjectOfType<ComputerInteractionDocumentTask>();
+                }
+
+                return documentTask;
             }
-
-            return documentTask;
         }
-    }
-    private MailsWindow MailsWindow
-    {
-        get
+        private MailsWindow MailsWindow
         {
-            if (mailsWindow == null)
+            get
             {
-                mailsWindow = transform.GetComponentInChildren<MailsWindow>(true);
+                if (mailsWindow == null)
+                {
+                    mailsWindow = transform.GetComponentInChildren<MailsWindow>(true);
+                }
+
+                return mailsWindow;
             }
-
-            return mailsWindow;
         }
-    }
-    private MailController MailController
-    {
-        get
+        private MailController MailController
         {
-            if (mailController == null)
+            get
             {
-                mailController = transform.GetComponentInChildren<MailController>(true);
+                if (mailController == null)
+                {
+                    mailController = transform.GetComponentInChildren<MailController>(true);
+                }
+
+                return mailController;
             }
-
-            return mailController;
         }
-    }
-    private ComputerScreen ComputerScreen
-    {
-        get
+        private ComputerScreen ComputerScreen
         {
-            if (computerScreen == null)
+            get
             {
-                computerScreen = transform.GetComponentInChildren<ComputerScreen>(true);
+                if (computerScreen == null)
+                {
+                    computerScreen = transform.GetComponentInChildren<ComputerScreen>(true);
+                }
+
+                return computerScreen;
             }
-
-            return computerScreen;
         }
-    }
 
 
-    public override bool CanActivate()
-    {
-        return (MailTask.IsActive() || DocumentTask.IsActive()) 
-               && (requiredMovementNode == null || Player.CurrentMovementPoint == requiredMovementNode);
-    }
-
-    public override void Begin()
-    {
-        ComputerScreen.Open();
-        if (MailTask.IsActive())
+        public override bool CanActivate()
         {
-            MailsWindow.Open();
-            MailController.OnMailSelected += (sender, mail) =>
-            {
-                Finish();
-            };
-            MailsWindow.OnWindowClosed += (sender, args) =>
-            {
-                ComputerScreen.Close();
-            };
-        } 
-        else if (DocumentTask.IsActive())
-        {
-            // TODO: implement document task
+            return (MailTask.IsActive() || DocumentTask.IsActive()) 
+                   && (requiredMovementNode == null || Player.CurrentMovementPoint == requiredMovementNode);
         }
-    }
 
+        public override void Begin()
+        {
+            ComputerScreen.Open();
+            if (MailTask.IsActive())
+            {
+                MailsWindow.Open();
+                MailController.OnMailSelected += (sender, mail) =>
+                {
+                    Finish();
+                };
+                MailsWindow.OnWindowClosed += (sender, args) =>
+                {
+                    ComputerScreen.Close();
+                };
+            } 
+            else if (DocumentTask.IsActive())
+            {
+                // TODO: implement document task
+            }
+        }
+
+    }
 }

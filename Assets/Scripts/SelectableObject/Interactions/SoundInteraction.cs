@@ -1,37 +1,38 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class SoundInteraction : MonoBehaviour, IInteraction
+namespace Assets.Scripts.SelectableObject.Interactions
 {
-    public AudioSource audioSource;
-    public MovementNode requiredPosition;
-
-    private PlayerController player;
-    private PlayerController Player
+    public class SoundInteraction : MonoBehaviour, IInteraction
     {
-        get
+        public AudioSource audioSource;
+        public MovementNode requiredPosition;
+
+        private PlayerController player;
+        private PlayerController Player
         {
-            if (player == null)
+            get
             {
-                player = FindObjectOfType<PlayerController>();
+                if (player == null)
+                {
+                    player = FindObjectOfType<PlayerController>();
+                }
+                return player;
             }
-            return player;
         }
-    }
 
-    public bool CanActivate()
-    {
-        return requiredPosition != null && requiredPosition == Player.CurrentMovementPoint;
-    }
+        public bool CanActivate()
+        {
+            return requiredPosition != null && requiredPosition == Player.CurrentMovementPoint;
+        }
 
-    public bool IsActive()
-    {
-        return audioSource.isPlaying;
-    }
-    public void Activate()
-    {
-        audioSource.Play();
-    }
+        public bool IsActive()
+        {
+            return audioSource.isPlaying;
+        }
+        public void Activate()
+        {
+            audioSource.Play();
+        }
 
+    }
 }

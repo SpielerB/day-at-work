@@ -7,6 +7,7 @@ namespace Assets.Scripts.Computer
 {
     public class Mail : MonoBehaviour
     {
+
         public string title;
         public string from;
         [TextArea]

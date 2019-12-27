@@ -1,11 +1,14 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Assets.Scripts.SelectableObject.Interactions;
 using TMPro;
 using UnityEngine;
 
 namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
 {
-    class GenericNPCConversation : NPCDialogue
+    [SuppressMessage("ReSharper", "InconsistentNaming")]
+    public class GenericNPCConversation : NPCDialogue
     {
         private DialogueTree root;
         private DialogueTree current;
@@ -52,11 +55,11 @@ namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
         }
 
 
-        // ReSharper disable once UnusedMember.Global
         /**
          * Continues the current conversation
          * !! This method is used in unity itself, don't remove it
          */
+        [SuppressMessage("ReSharper", "UnusedMember.Global")]
         public void Continue(TextMeshProUGUI sender)
         {
             for (var i = 0; i < buttons.Length; i++)
@@ -115,6 +118,8 @@ namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
 
                 return str.ToArray();
             }
+
+            [SuppressMessage("ReSharper", "UnusedMember.Local")]
             public string ToString(int depth = 0)
             {
                 var off = new string('\t', depth);

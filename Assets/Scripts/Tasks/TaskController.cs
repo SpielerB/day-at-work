@@ -1,44 +1,45 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Text;
-using Assets.Scripts.Tasks;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class TaskController : MonoBehaviour
+namespace Assets.Scripts.Tasks
 {
-
-    public TextMeshProUGUI taskList;
-    public Task initialTask;
-
-    private void Start()
+    public class TaskController : MonoBehaviour
     {
-        if (initialTask != null) initialTask.Begin();
-        UpdateTaskList();
-    }
 
-    private void Update()
-    {
-        UpdateTaskList();
-    }
+        public TextMeshProUGUI taskList;
+        public Task initialTask;
 
-    private void UpdateTaskList()
-    {
-        var sb = new StringBuilder();
-        var current = initialTask;
-        var count = 1;
-        while (current != null)
+        [SuppressMessage("ReSharper", "UnusedMember.Local")]
+        private void Start()
         {
-            sb.Append(current.IsActive() ? "> " : "   ");
-            sb.Append(count++);
-            sb.Append(". ");
-            sb.Append(current.title);
-            sb.Append('\n');
-            current = current.nextTask;
+            if (initialTask != null) initialTask.Begin();
+            UpdateTaskList();
         }
 
-        taskList.text = sb.ToString();
+        [SuppressMessage("ReSharper", "UnusedMember.Local")]
+        private void Update()
+        {
+            UpdateTaskList();
+        }
+
+        private void UpdateTaskList()
+        {
+            var sb = new StringBuilder();
+            var current = initialTask;
+            var count = 1;
+            while (current != null)
+            {
+                sb.Append(current.IsActive() ? "> " : "   ");
+                sb.Append(count++);
+                sb.Append(". ");
+                sb.Append(current.title);
+                sb.Append('\n');
+                current = current.nextTask;
+            }
+
+            taskList.text = sb.ToString();
+        }
     }
 }

@@ -1,30 +1,35 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 
-public class FloatingSprite : MonoBehaviour
+namespace Assets.Scripts
 {
-    public float amplitude = 0.25f;
-    public float frequency = 1.25f;
-
-    private Vector3 offset;
-    private Vector3 position;
-
-    private void Start()
+    public class FloatingSprite : MonoBehaviour
     {
-        offset = transform.position;
-    }
+        public float amplitude = 0.25f;
+        public float frequency = 1.25f;
 
-    private void Update()
-    {
-        position = offset;
-        position.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
+        private Vector3 offset;
+        private Vector3 position;
 
-        transform.position = position;
-    }
+        [SuppressMessage("ReSharper", "UnusedMember.Local")]
+        private void Start()
+        {
+            offset = transform.position;
+        }
 
-    private void LateUpdate()
-    {
-        transform.forward = Camera.main.transform.forward;
+        [SuppressMessage("ReSharper", "UnusedMember.Local")]
+        private void Update()
+        {
+            position = offset;
+            position.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
+
+            transform.position = position;
+        }
+
+        [SuppressMessage("ReSharper", "UnusedMember.Local")]
+        private void LateUpdate()
+        {
+            transform.forward = Camera.main.transform.forward;
+        }
     }
 }

@@ -1,9 +1,13 @@
-﻿public interface IInteraction
+﻿namespace Assets.Scripts.SelectableObject.Interactions
 {
-    bool CanActivate();
+    public interface IInteraction
+    {
 
-    bool IsActive();
+        bool CanActivate();
 
-    void Activate();
+        bool IsActive();
 
+        void Activate();
+
+    }
 }

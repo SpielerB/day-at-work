@@ -1,81 +1,83 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Assets.Scripts.SelectableObject.Interactions;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Selectable : Outline
+namespace Assets.Scripts.SelectableObject
 {
-    private Color normColor = Color.white;
-    private float normWidth;
-
-    private Color spezColor;
-    private float spezWidth;
-    private bool active;
-    private bool isLookedAt;
-
-    private Selectable selected;
-    private IInteraction interaction;
-
-    private void Start()
+    public class Selectable : Outline
     {
-        selected = GetComponent<Selectable>();
-        normColor = selected.OutlineColor;
-        normWidth = selected.OutlineWidth;
-        spezWidth = normWidth + 5;
-        spezColor = new Color(normColor.r, normColor.g + 1, normColor.b);
-        interaction = GetComponent<IInteraction>();
+        private Color normColor = Color.white;
+        private float normWidth;
 
-        var trigger = gameObject.AddComponent<EventTrigger>();
-        var pointerEnter = new EventTrigger.Entry { eventID = EventTriggerType.PointerEnter };
-        pointerEnter.callback.AddListener(d => LookAt(true));
-        trigger.triggers.Add(pointerEnter);
+        private Color spezColor;
+        private float spezWidth;
+        private bool active;
+        private bool isLookedAt;
 
-        var pointerExit = new EventTrigger.Entry { eventID = EventTriggerType.PointerExit };
-        pointerExit.callback.AddListener(d => LookAt(false));
-        trigger.triggers.Add(pointerExit);
+        private Selectable selected;
+        private IInteraction interaction;
 
-        var pointerClick = new EventTrigger.Entry { eventID = EventTriggerType.PointerClick };
-        pointerClick.callback.AddListener(d => PointerClick());
-        trigger.triggers.Add(pointerClick);
-    }
-
-    private void UpdateOutline()
-    {
-        if (isLookedAt && interaction.CanActivate() || active)
+        private void Start()
         {
-            selected.OutlineColor = spezColor;
-            selected.OutlineWidth = spezWidth;
+            selected = GetComponent<Selectable>();
+            normColor = selected.OutlineColor;
+            normWidth = selected.OutlineWidth;
+            spezWidth = normWidth + 5;
+            spezColor = new Color(normColor.r, normColor.g + 1, normColor.b);
+            interaction = GetComponent<IInteraction>();
+
+            var trigger = gameObject.AddComponent<EventTrigger>();
+            var pointerEnter = new EventTrigger.Entry { eventID = EventTriggerType.PointerEnter };
+            pointerEnter.callback.AddListener(d => LookAt(true));
+            trigger.triggers.Add(pointerEnter);
+
+            var pointerExit = new EventTrigger.Entry { eventID = EventTriggerType.PointerExit };
+            pointerExit.callback.AddListener(d => LookAt(false));
+            trigger.triggers.Add(pointerExit);
+
+            var pointerClick = new EventTrigger.Entry { eventID = EventTriggerType.PointerClick };
+            pointerClick.callback.AddListener(d => PointerClick());
+            trigger.triggers.Add(pointerClick);
         }
-        else
-        {
-            selected.OutlineColor = normColor;
-            selected.OutlineWidth = normWidth;
-        }
-    }
 
-    protected override void Update()
-    {
-        if (active && !interaction.IsActive())
+        private void UpdateOutline()
         {
-            active = false;
+            if (isLookedAt && interaction.CanActivate() || active)
+            {
+                selected.OutlineColor = spezColor;
+                selected.OutlineWidth = spezWidth;
+            }
+            else
+            {
+                selected.OutlineColor = normColor;
+                selected.OutlineWidth = normWidth;
+            }
+        }
+
+        protected override void Update()
+        {
+            if (active && !interaction.IsActive())
+            {
+                active = false;
+                UpdateOutline();
+            }
+            base.Update();
+        }
+
+        public void LookAt(bool isLookedAt)
+        {
+            this.isLookedAt = isLookedAt;
             UpdateOutline();
         }
-        base.Update();
-    }
 
-    public void LookAt(bool isLookedAt)
-    {
-        this.isLookedAt = isLookedAt;
-        UpdateOutline();
-    }
+        public void PointerClick()
+        {
+            if (active || !interaction.CanActivate()) return;
+            interaction.Activate();
+            active = true;
+            UpdateOutline();
 
-    public void PointerClick()
-    {
-        if (active || !interaction.CanActivate()) return;
-        interaction.Activate();
-        active = true;
-        UpdateOutline();
+        }
 
     }
-
 }

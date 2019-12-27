@@ -1,30 +1,35 @@
-﻿using Assets.Scripts.SelectableObject.Interactions;
+﻿using System.Diagnostics.CodeAnalysis;
+using Assets.Scripts.SelectableObject.NPCs.State_Machines;
 
-public class NPCInteraction : TaskInteraction
+namespace Assets.Scripts.SelectableObject.Interactions
 {
-    public NPCDialogue machine;
-    public MovementNode requiredPosition;
-
-    private PlayerController player;
-    private PlayerController Player
+    [SuppressMessage("ReSharper", "InconsistentNaming")]
+    public class NPCInteraction : TaskInteraction
     {
-        get
+        public NPCDialogue machine;
+        public MovementNode requiredPosition;
+
+        private PlayerController player;
+        private PlayerController Player
         {
-            if (player == null)
+            get
             {
-                player = FindObjectOfType<PlayerController>();
+                if (player == null)
+                {
+                    player = FindObjectOfType<PlayerController>();
+                }
+                return player;
             }
-            return player;
         }
-    }
 
-    public override void Begin()
-    {
-        machine.ConvStart();
-    }
+        public override void Begin()
+        {
+            machine.ConvStart();
+        }
 
-    public override bool CanActivate()
-    {
-        return requiredPosition != null && requiredPosition == Player.CurrentMovementPoint;
+        public override bool CanActivate()
+        {
+            return requiredPosition != null && requiredPosition == Player.CurrentMovementPoint;
+        }
     }
 }
