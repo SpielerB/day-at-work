@@ -18,9 +18,9 @@ namespace Assets.Scripts.Computer
         public float closingDelay = 4;
         public TextMeshProUGUI target;
 
-        private int currentIndex = 0;
-        private float timer = 0;
-        private bool canClose = false;
+        private int currentIndex;
+        private float timer;
+        private bool canClose;
 
         [SuppressMessage("ReSharper", "UnusedMember.Local")]
         private void Update()
