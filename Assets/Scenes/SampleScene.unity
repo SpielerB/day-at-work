@@ -3873,16 +3873,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1600756112}
     m_Modifications:
-    - target: {fileID: 211055280887078748, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
-        type: 3}
-      propertyPath: m_text
-      value: Preview
-      objectReference: {fileID: 0}
-    - target: {fileID: 211055280887078748, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 1075191392572633096, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
         type: 3}
       propertyPath: m_Name
@@ -3943,16 +3933,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2225488147324356795, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6362723927104634781, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
-        type: 3}
-      propertyPath: requiredMovementNode
-      value: 
-      objectReference: {fileID: 1393204820}
     - target: {fileID: 6362723927104634781, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
         type: 3}
       propertyPath: mailsWindow
@@ -3963,8 +3943,12 @@ PrefabInstance:
       propertyPath: mailController
       value: 
       objectReference: {fileID: 499023810}
-    m_RemovedComponents:
-    - {fileID: 2220692214706135362, guid: 0367de5392dc29f428e6b9c1b9be9dfe, type: 3}
+    - target: {fileID: 6362723927104634781, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
+        type: 3}
+      propertyPath: requiredMovementNode
+      value: 
+      objectReference: {fileID: 1393204820}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0367de5392dc29f428e6b9c1b9be9dfe, type: 3}
 --- !u!4 &499023808 stripped
 Transform:
@@ -7750,6 +7734,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1816087145}
     m_Modifications:
+    - target: {fileID: 8600590960474905893, guid: 84205f0b7c1a6e446911b87fe8ae35bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Renate
+      objectReference: {fileID: 0}
     - target: {fileID: 46723120661784471, guid: 84205f0b7c1a6e446911b87fe8ae35bf,
         type: 3}
       propertyPath: requiredPosition
@@ -7760,11 +7749,6 @@ PrefabInstance:
       propertyPath: machine
       value: 
       objectReference: {fileID: 1414403666}
-    - target: {fileID: 8600590960474905893, guid: 84205f0b7c1a6e446911b87fe8ae35bf,
-        type: 3}
-      propertyPath: m_Name
-      value: Renate
-      objectReference: {fileID: 0}
     - target: {fileID: 8600590960475062597, guid: 84205f0b7c1a6e446911b87fe8ae35bf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8278,6 +8262,28 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 473648370}
+    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: Conversation
+      value: "none;Good morning, Mr M\xFCller.\nGood morning.;Your place is over there.\r\nThank
+        you.;Do you have any questions?\nC\r\nHow many people work in this team?;At
+        the moment there are four people and you, so five in total.\nAre they all
+        in this office?;We are lucky our whole team is in the same office.\nHow flexible
+        can I arrange my working hours?;We have compulsory attendance from 9:00 -
+        12:00 and 14:00 - 16:00. Otherwise, you can be flexible.\nWhat are we discussing
+        today?;The agenda is already at your spot. Take a quick look at it yourself.\nC\r\nHow
+        flexible can I arrange my working hours?;We have compulsory attendance from
+        9:00 - 12:00 and 14:00 - 16:00. Otherwise, you can be flexible.\nHow many
+        people work in this team?;At the moment there are four people and you, so
+        five in total.\nAre they all in this office?;We are lucky our whole team is
+        in the same office.\nWhat are we discussing today?;The agenda is already at
+        your spot. Take a quick look at it yourself."
+      objectReference: {fileID: 0}
     - target: {fileID: 6923866533914357510, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8382,28 +8388,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: parent
-      value: 
-      objectReference: {fileID: 473648370}
-    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: Conversation
-      value: "none;Good morning, Mr M\xFCller.\nGood morning.;Your place is over there.\r\nThank
-        you.;Do you have any questions?\nC\r\nHow many people work in this team?;At
-        the moment there are four people and you, so five in total.\nAre they all
-        in this office?;We are lucky our whole team is in the same office.\nHow flexible
-        can I arrange my working hours?;We have compulsory attendance from 9:00 -
-        12:00 and 14:00 - 16:00. Otherwise, you can be flexible.\nWhat are we discussing
-        today?;The agenda is already at your spot. Take a quick look at it yourself.\nC\r\nHow
-        flexible can I arrange my working hours?;We have compulsory attendance from
-        9:00 - 12:00 and 14:00 - 16:00. Otherwise, you can be flexible.\nHow many
-        people work in this team?;At the moment there are four people and you, so
-        five in total.\nAre they all in this office?;We are lucky our whole team is
-        in the same office.\nWhat are we discussing today?;The agenda is already at
-        your spot. Take a quick look at it yourself."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1cef448d5c2941469dd64a665d17950, type: 3}
@@ -12290,6 +12274,32 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 337880071}
+    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: Conversation
+      value: "none;Hello. You are the new worker, right?\r\nRight, my name is Alex.;I'm
+        Berta. Nice to meet you.\r\nC\r\nWhat is your job?;I am the team leader in
+        administration.\r\nHow long have you been working here?;Hm, it has been five
+        years now.\r\nDid you start as a team leader five years ago?;No, I have only
+        been a team leader for one year. In our department, we always have the opportunity
+        to take a step up the career ladder.\r\nI think that's great. How does that
+        work?;The company has a very innovative talent development system in which
+        all employees who are interested and suitable for higher positions are specifically
+        encouraged and supported.\r\nThank you for the information.;You're welcome.\r\nC\r\nHow
+        long have you been working here?;Hm, it has been five years now.\r\nWhat is
+        your job?;I am the team leader in administration.\r\nDid you start as a team
+        leader five years ago?;No, I have only been a team leader for one year. In
+        our department, we always have the opportunity to take a step up the career
+        ladder.\r\nI think that's great. How does that work?;The company has a very
+        innovative talent development system in which all employees who are interested
+        and suitable for higher positions are specifically encouraged and supported.\r\nThank
+        you for the information.;You're welcome."
+      objectReference: {fileID: 0}
     - target: {fileID: 6923866533914357510, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12394,32 +12404,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: parent
-      value: 
-      objectReference: {fileID: 337880071}
-    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: Conversation
-      value: "none;Hello. You are the new worker, right?\r\nRight, my name is Alex.;I'm
-        Berta. Nice to meet you.\r\nC\r\nWhat is your job?;I am the team leader in
-        administration.\r\nHow long have you been working here?;Hm, it has been five
-        years now.\r\nDid you start as a team leader five years ago?;No, I have only
-        been a team leader for one year. In our department, we always have the opportunity
-        to take a step up the career ladder.\r\nI think that's great. How does that
-        work?;The company has a very innovative talent development system in which
-        all employees who are interested and suitable for higher positions are specifically
-        encouraged and supported.\r\nThank you for the information.;You're welcome.\r\nC\r\nHow
-        long have you been working here?;Hm, it has been five years now.\r\nWhat is
-        your job?;I am the team leader in administration.\r\nDid you start as a team
-        leader five years ago?;No, I have only been a team leader for one year. In
-        our department, we always have the opportunity to take a step up the career
-        ladder.\r\nI think that's great. How does that work?;The company has a very
-        innovative talent development system in which all employees who are interested
-        and suitable for higher positions are specifically encouraged and supported.\r\nThank
-        you for the information.;You're welcome."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1cef448d5c2941469dd64a665d17950, type: 3}
@@ -13111,6 +13095,71 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1498645803}
+    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: Conversation
+      value: 'none;Hello, I''m Charline.
+
+        Hi, I''m Alex.;Nice to meet you.
+
+        What''s going on in the kitchen today?;It''s Anton''s birthday, and he brought
+        a cake. Take a piece too.
+
+        With pleasure.;The cake is very delicious.
+
+        C
+
+        Do you like working on this team?;Absolutely. We have a great team, which
+        gets along very well even outside work.
+
+        How is social interaction with each other?;In our team as well as with our
+        boss we are all friendly and informal. Some department heads like to stay
+        more formal. I''m acting formally with the whole management, but we exchange
+        ideas normally and politely.
+
+        Do you like working here?;I enjoy my work very much.
+
+        Why is that?;I always have new tasks that I can do and meet new people.
+
+        That sounds very good. So not boring at all?;On the contrary, my work is very
+        varied and always exciting.
+
+        How satisfied are you with the whole company?;Like all companies, there are
+        some things here that could be better. But they are outnumbered. The processes
+        and structures are well organized, and everyone knows what and how to do their
+        work.
+
+        Thanks for all the information.;You''re welcome.
+
+        C
+
+        Do you like working here?;I enjoy my work very much.
+
+        Why is that?;I always have new tasks that I can do and meet new people.
+
+        That sounds very good. So not boring at all?;On the contrary, my work is very
+        varied and always exciting.
+
+        How satisfied are you with the whole company?;Like all companies, there are
+        some things here that could be better. But they are outnumbered. The processes
+        and structures are well organized, and everyone knows what and how to do their
+        work.
+
+        Do you like working on this team?;Absolutely. We have a great team, which
+        gets along very well even outside work.
+
+        How is social interaction with each other?; In our team as well as with our
+        boss we are all friendly and informal. Some department heads like to stay
+        more formal. I''m acting formally with the whole management, but we exchange
+        ideas normally and politely.
+
+        Thanks for all the information.;You''re welcome.'
+      objectReference: {fileID: 0}
     - target: {fileID: 6923866533914357510, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13215,71 +13264,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: parent
-      value: 
-      objectReference: {fileID: 1498645803}
-    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: Conversation
-      value: 'none;Hello, I''m Charline.
-
-        Hi, I''m Alex.;Nice to meet you.
-
-        What''s going on in the kitchen today?;It''s Anton''s birthday, and he brought
-        a cake. Take a piece too.
-
-        With pleasure.;The cake is very delicious.
-
-        C
-
-        Do you like working on this team?;Absolutely. We have a great team, which
-        gets along very well even outside work.
-
-        How is social interaction with each other?;In our team as well as with our
-        boss we are all friendly and informal. Some department heads like to stay
-        more formal. I''m acting formally with the whole management, but we exchange
-        ideas normally and politely.
-
-        Do you like working here?;I enjoy my work very much.
-
-        Why is that?;I always have new tasks that I can do and meet new people.
-
-        That sounds very good. So not boring at all?;On the contrary, my work is very
-        varied and always exciting.
-
-        How satisfied are you with the whole company?;Like all companies, there are
-        some things here that could be better. But they are outnumbered. The processes
-        and structures are well organized, and everyone knows what and how to do their
-        work.
-
-        Thanks for all the information.;You''re welcome.
-
-        C
-
-        Do you like working here?;I enjoy my work very much.
-
-        Why is that?;I always have new tasks that I can do and meet new people.
-
-        That sounds very good. So not boring at all?;On the contrary, my work is very
-        varied and always exciting.
-
-        How satisfied are you with the whole company?;Like all companies, there are
-        some things here that could be better. But they are outnumbered. The processes
-        and structures are well organized, and everyone knows what and how to do their
-        work.
-
-        Do you like working on this team?;Absolutely. We have a great team, which
-        gets along very well even outside work.
-
-        How is social interaction with each other?; In our team as well as with our
-        boss we are all friendly and informal. Some department heads like to stay
-        more formal. I''m acting formally with the whole management, but we exchange
-        ideas normally and politely.
-
-        Thanks for all the information.;You''re welcome.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1cef448d5c2941469dd64a665d17950, type: 3}
@@ -17949,26 +17933,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 396073785}
     m_Modifications:
-    - target: {fileID: 6923866533676436440, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923866533676436440, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923866533676436440, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923866533676436440, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6923866533914357505, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
       propertyPath: m_Name
@@ -17978,6 +17942,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: Conversation
+      value: "none;Hello.\nHello, I'm Alex.;My name is Emil.\nC\nIs there a given
+        seating arrangement?;We always sit in the same place, so we don't have to
+        search for a seat.\nWhere is my place?;I don't know. You'll have to ask the
+        boss.\nOk, thanks.; You're welcome.\nHow do these meetings usually work?;We
+        work through our agenda and discuss the individual items.\nIsn't it a little
+        boring to always do it the same way?;Not at all. Not at all. We appreciate
+        this exchange within our team. An opportunity for everyone to get involved.
+        We also discuss internal team problems and solve them together.\nOh, that's
+        how it is.; So, I think it's about to start. Enjoy your first meeting.\nC\nHow
+        do these meetings usually work?;We work through our agenda and discuss the
+        individual items.\r\nIsn't it a little boring to always do it the same way?;Not
+        at all. Not at all. We appreciate this exchange within our team. An opportunity
+        for everyone to get involved. We also discuss internal team problems and solve
+        them together.\r\nOh, that's how it is. Is there a given seating arrangement?;We
+        always sit in the same place, so we don't have to search for a seat.\r\nAnd
+        where is my place?;I don't know. You'll have to ask the boss.\r\nOk, thanks.;So,
+        I think it's about to start. Enjoy your first meeting.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 6923866533914357510, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
@@ -18084,26 +18069,25 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
+    - target: {fileID: 6923866533676436440, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
-      propertyPath: Conversation
-      value: "none;Hello.\nHello, I'm Alex.;My name is Emil.\nC\nIs there a given
-        seating arrangement?;We always sit in the same place, so we don't have to
-        search for a seat.\nWhere is my place?;I don't know. You'll have to ask the
-        boss.\nOk, thanks.; You're welcome.\nHow do these meetings usually work?;We
-        work through our agenda and discuss the individual items.\nIsn't it a little
-        boring to always do it the same way?;Not at all. Not at all. We appreciate
-        this exchange within our team. An opportunity for everyone to get involved.
-        We also discuss internal team problems and solve them together.\nOh, that's
-        how it is.; So, I think it's about to start. Enjoy your first meeting.\nC\nHow
-        do these meetings usually work?;We work through our agenda and discuss the
-        individual items.\r\nIsn't it a little boring to always do it the same way?;Not
-        at all. Not at all. We appreciate this exchange within our team. An opportunity
-        for everyone to get involved. We also discuss internal team problems and solve
-        them together.\r\nOh, that's how it is. Is there a given seating arrangement?;We
-        always sit in the same place, so we don't have to search for a seat.\r\nAnd
-        where is my place?;I don't know. You'll have to ask the boss.\r\nOk, thanks.;So,
-        I think it's about to start. Enjoy your first meeting.\r"
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923866533676436440, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923866533676436440, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923866533676436440, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6923866534601638527, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
@@ -18876,6 +18860,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: mesh_office_m_marketing01
       objectReference: {fileID: 0}
+    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99986863
+      objectReference: {fileID: 0}
+    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.016213048
+      objectReference: {fileID: 0}
+    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 178.14201
+      objectReference: {fileID: 0}
+    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.16688067
@@ -19043,50 +19071,6 @@ PrefabInstance:
     - target: {fileID: 400034, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 4.5280004
-      objectReference: {fileID: 0}
-    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.99986863
-      objectReference: {fileID: 0}
-    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.016213048
-      objectReference: {fileID: 0}
-    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 178.14201
-      objectReference: {fileID: 0}
-    - target: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
@@ -20123,6 +20107,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2603615621760535911, guid: 722025d3d0f74404581d4281038e4e51,
+        type: 3}
+      propertyPath: m_Name
+      value: SIMULATION
+      objectReference: {fileID: 0}
     - target: {fileID: 914904932, guid: 722025d3d0f74404581d4281038e4e51, type: 3}
       propertyPath: taskList
       value: 
@@ -20189,11 +20178,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2603615621760535911, guid: 722025d3d0f74404581d4281038e4e51,
-        type: 3}
-      propertyPath: m_Name
-      value: SIMULATION
       objectReference: {fileID: 0}
     - target: {fileID: 2603615622156473526, guid: 722025d3d0f74404581d4281038e4e51,
         type: 3}
@@ -20307,6 +20291,62 @@ PrefabInstance:
       propertyPath: m_Name
       value: Charline
       objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.221832
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.488
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.656664
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6930283
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.72091043
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 272.259
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.10119833
@@ -20365,62 +20405,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.221832
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 11.488
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -8.656664
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.6930283
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.72091043
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 272.259
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
-      propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -20883,6 +20867,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1732707483}
+    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: Conversation
+      value: 'none;Do you mind?
+
+        C
+
+        Oh Sorry!; Leave!
+
+        C
+
+        Slacking eh?;So what? Go away!
+
+        Nah.; This is messed up man.'
+      objectReference: {fileID: 0}
     - target: {fileID: 6923866533914357510, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20988,26 +20992,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: parent
-      value: 
-      objectReference: {fileID: 1732707483}
-    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: Conversation
-      value: 'none;Do you mind?
-
-        C
-
-        Oh Sorry!; Leave!
-
-        C
-
-        Slacking eh?;So what? Go away!
-
-        Nah.; This is messed up man.'
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1cef448d5c2941469dd64a665d17950, type: 3}
 --- !u!1001 &1514771294
@@ -21086,6 +21070,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 57291918}
     m_Modifications:
+    - target: {fileID: 6881301029576943198, guid: 8f1f9cafb61b8ea4e829731597241607,
+        type: 3}
+      propertyPath: m_Name
+      value: coffeemashine
+      objectReference: {fileID: 0}
     - target: {fileID: 2147172910394137383, guid: 8f1f9cafb61b8ea4e829731597241607,
         type: 3}
       propertyPath: requiredPosition
@@ -21145,11 +21134,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 179.98901
-      objectReference: {fileID: 0}
-    - target: {fileID: 6881301029576943198, guid: 8f1f9cafb61b8ea4e829731597241607,
-        type: 3}
-      propertyPath: m_Name
-      value: coffeemashine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f1f9cafb61b8ea4e829731597241607, type: 3}
@@ -24687,6 +24671,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: Conversation
+      value: "none;Good morning, Mr M\xFCller. How are you?\nC\nI'm all right. I'm
+        all right.;I'm glad to hear that. I wish you a nice day.\nThank you.;So I've
+        signed you in. See you later.\nC\nI don't feel so good.;That's a shame. I
+        hope your mood will improve during the day.\nThank you.;So I've signed you
+        in. See you later."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 205015834}
     - target: {fileID: 6923866533914357510, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24792,20 +24790,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: Conversation
-      value: "none;Good morning, Mr M\xFCller. How are you?\nC\nI'm all right. I'm
-        all right.;I'm glad to hear that. I wish you a nice day.\nThank you.;So I've
-        signed you in. See you later.\nC\nI don't feel so good.;That's a shame. I
-        hope your mood will improve during the day.\nThank you.;So I've signed you
-        in. See you later."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
-        type: 3}
-      propertyPath: parent
-      value: 
-      objectReference: {fileID: 205015834}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1cef448d5c2941469dd64a665d17950, type: 3}
 --- !u!1001 &1944084886
@@ -26727,6 +26711,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1396447306266100035, guid: 39990be904f8ca149a397ea8d468c009,
+        type: 3}
+      propertyPath: m_Name
+      value: HUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
+        type: 3}
+      propertyPath: m_isTextTruncated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 137
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 1379662123109056795, guid: 39990be904f8ca149a397ea8d468c009,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -26767,11 +26791,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1396447306266100035, guid: 39990be904f8ca149a397ea8d468c009,
-        type: 3}
-      propertyPath: m_Name
-      value: HUD
-      objectReference: {fileID: 0}
     - target: {fileID: 1506489042887455456, guid: 39990be904f8ca149a397ea8d468c009,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -26806,41 +26825,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 503
-      objectReference: {fileID: 0}
-    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
-        type: 3}
-      propertyPath: m_fontSize
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
-        type: 3}
-      propertyPath: m_fontSizeBase
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
-        type: 3}
-      propertyPath: m_isTextTruncated
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 137
-      objectReference: {fileID: 0}
-    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 62
-      objectReference: {fileID: 0}
-    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4780152723369131275, guid: 39990be904f8ca149a397ea8d468c009,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5623715793876812083, guid: 39990be904f8ca149a397ea8d468c009,
         type: 3}
@@ -26956,25 +26940,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 57291918}
     m_Modifications:
-    - target: {fileID: 493584717713194615, guid: 1b043c3c4992b804f8b5501e9ece37f0,
+    - target: {fileID: 4750034043728703166, guid: 1b043c3c4992b804f8b5501e9ece37f0,
         type: 3}
-      propertyPath: audioSource
-      value: 
-      objectReference: {fileID: 4750034043445864100}
-    - target: {fileID: 493584717713194615, guid: 1b043c3c4992b804f8b5501e9ece37f0,
-        type: 3}
-      propertyPath: requiredPosition
-      value: 
-      objectReference: {fileID: 1494257030}
-    - target: {fileID: 1434213013652946277, guid: 1b043c3c4992b804f8b5501e9ece37f0,
-        type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1434213013652946277, guid: 1b043c3c4992b804f8b5501e9ece37f0,
-        type: 3}
-      propertyPath: MaxDistance
-      value: 1
+      propertyPath: m_Name
+      value: cake
       objectReference: {fileID: 0}
     - target: {fileID: 4750034043728409246, guid: 1b043c3c4992b804f8b5501e9ece37f0,
         type: 3}
@@ -27031,10 +27000,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4750034043728703166, guid: 1b043c3c4992b804f8b5501e9ece37f0,
+    - target: {fileID: 493584717713194615, guid: 1b043c3c4992b804f8b5501e9ece37f0,
         type: 3}
-      propertyPath: m_Name
-      value: cake
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 4750034043445864100}
+    - target: {fileID: 493584717713194615, guid: 1b043c3c4992b804f8b5501e9ece37f0,
+        type: 3}
+      propertyPath: requiredPosition
+      value: 
+      objectReference: {fileID: 1494257030}
+    - target: {fileID: 1434213013652946277, guid: 1b043c3c4992b804f8b5501e9ece37f0,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1434213013652946277, guid: 1b043c3c4992b804f8b5501e9ece37f0,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b043c3c4992b804f8b5501e9ece37f0, type: 3}
