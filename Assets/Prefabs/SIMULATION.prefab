@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914904931}
   - component: {fileID: 914904932}
+  - component: {fileID: 314430167643454237}
   - component: {fileID: 914904933}
   - component: {fileID: 914904934}
   m_Layer: 0
@@ -46,7 +47,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskList: {fileID: 0}
-  initialTask: {fileID: 914904933}
+  initialTask: {fileID: 314430167643454237}
+--- !u!114 &314430167643454237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914904930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6451add78f13f8e4098b8cb05e8c3e0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHour: 8
+  startMinute: 0
+  title: Sign in with the receptionist
+  nextTask: {fileID: 914904933}
+  interaction: {fileID: 0}
 --- !u!114 &914904933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,8 +78,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHour: 8
-  startMinute: 0
-  title: E-Mail beantworten
+  startMinute: 30
+  title: Answer your E-Mails
   nextTask: {fileID: 914904934}
   interaction: {fileID: 0}
 --- !u!114 &914904934
@@ -76,9 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea3fdc9448d7f99419c0c6e860b86cf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHour: 10
+  startHour: 14
   startMinute: 0
-  title: Anderes
+  title: Process documents
   nextTask: {fileID: 0}
   interaction: {fileID: 0}
 --- !u!1 &2603615621760535911

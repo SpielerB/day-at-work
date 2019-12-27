@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class AStateMachine : MonoBehaviour
+public abstract class NPCDialogue : MonoBehaviour
 {
     private AbstractState state;
     public abstract void ConvStart();

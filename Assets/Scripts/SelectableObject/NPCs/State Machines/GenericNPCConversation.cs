@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
 
 namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
 {
-    class GenericNPCConversation : AStateMachine
+    class GenericNPCConversation : NPCDialogue
     {
         private DialogueTree root;
         private DialogueTree current;
@@ -75,7 +74,7 @@ namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
          */
         public void Quit()
         {
-            parent.Exit();
+            parent.Finish();
             dialogueBox.SetActive(false);
         }
 

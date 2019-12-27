@@ -212,12 +212,8 @@
     <Compile Include="Assets\Scripts\SelectableObject\Interactions\NPCInteraction.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\Interactions\SoundInteraction.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\Interactions\TaskInteraction.cs" />
-    <Compile Include="Assets\Scripts\SelectableObject\NPCs\State Machines\Anton.cs" />
-    <Compile Include="Assets\Scripts\SelectableObject\NPCs\State Machines\AStateMachine.cs" />
-    <Compile Include="Assets\Scripts\SelectableObject\NPCs\State Machines\Berta.cs" />
-    <Compile Include="Assets\Scripts\SelectableObject\NPCs\State Machines\Boss.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\NPCs\State Machines\GenericNPCConversation.cs" />
-    <Compile Include="Assets\Scripts\SelectableObject\NPCs\State Machines\Receptionist.cs" />
+    <Compile Include="Assets\Scripts\SelectableObject\NPCs\State Machines\NPCDialogue.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\NPCs\States\AbstractState.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\Selectable.cs" />
     <Compile Include="Assets\Scripts\SimulationController.cs" />

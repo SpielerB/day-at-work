@@ -17,7 +17,7 @@ public abstract class AbstractState
     public abstract void NPCTalks();
     public void Exit()
     {
-        context.Exit();
+        context.Finish();
     }
 }
 

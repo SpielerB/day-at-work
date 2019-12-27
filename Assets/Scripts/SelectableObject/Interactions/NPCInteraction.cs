@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using Assets.Scripts.SelectableObject.Interactions;
 
-public class NPCInteraction : MonoBehaviour, IInteraction
-{   //Kontext of NPC State Machine 
-    private bool isActive;
-
-    public AStateMachine machine;
+public class NPCInteraction : TaskInteraction
+{
+    public NPCDialogue machine;
     public MovementNode requiredPosition;
 
     private PlayerController player;
@@ -23,24 +18,13 @@ public class NPCInteraction : MonoBehaviour, IInteraction
         }
     }
 
-    public bool CanActivate()
-    {
-        return requiredPosition != null && requiredPosition == Player.CurrentMovementPoint;
-    }
-
-    public void Exit()
-    {
-        isActive = false;
-    }
-    
-    public void Activate()
+    public override void Begin()
     {
         machine.ConvStart();
-        isActive = true;
     }
 
-    public bool IsActive()
+    public override bool CanActivate()
     {
-        return isActive;
+        return requiredPosition != null && requiredPosition == Player.CurrentMovementPoint;
     }
 }
