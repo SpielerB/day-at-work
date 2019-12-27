@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 914904933}
   - component: {fileID: 4163610682089459043}
   - component: {fileID: 730455934014813904}
-  - component: {fileID: 914904934}
   - component: {fileID: 5495546504387290848}
   - component: {fileID: 8101252907639461232}
+  - component: {fileID: 914904934}
   - component: {fileID: 8177650110895536736}
   m_Layer: 0
   m_Name: TaskController
@@ -155,23 +155,6 @@ MonoBehaviour:
   startHour: 10
   startMinute: 5
   title: Talk to the boss
-  nextTask: {fileID: 914904934}
-  interaction: {fileID: 0}
---- !u!114 &914904934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 914904930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea3fdc9448d7f99419c0c6e860b86cf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startHour: 14
-  startMinute: 0
-  title: Process documents
   nextTask: {fileID: 5495546504387290848}
   interaction: {fileID: 0}
 --- !u!114 &5495546504387290848
@@ -206,6 +189,23 @@ MonoBehaviour:
   startHour: 16
   startMinute: 30
   title: Get some coffee
+  nextTask: {fileID: 914904934}
+  interaction: {fileID: 0}
+--- !u!114 &914904934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914904930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3fdc9448d7f99419c0c6e860b86cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHour: 14
+  startMinute: 0
+  title: Process documents
   nextTask: {fileID: 8177650110895536736}
   interaction: {fileID: 0}
 --- !u!114 &8177650110895536736
