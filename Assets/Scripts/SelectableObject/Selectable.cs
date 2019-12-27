@@ -42,7 +42,11 @@ namespace Assets.Scripts.SelectableObject
 
         private void UpdateOutline()
         {
-            if (isLookedAt && interaction.CanActivate() || active)
+            if (active)
+            {
+                selected.OutlineWidth = 0;
+            }
+            else if (isLookedAt && interaction.CanActivate())
             {
                 selected.OutlineColor = spezColor;
                 selected.OutlineWidth = spezWidth;
