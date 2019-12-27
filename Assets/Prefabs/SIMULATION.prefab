@@ -489,7 +489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5259284053654525523}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.321, y: 2.815, z: 32.631}
+  m_LocalPosition: {x: 0, y: 4, z: 66.1}
   m_LocalScale: {x: 0.125, y: 0.125, z: 0.125}
   m_Children: []
   m_Father: {fileID: 2603615621760535910}
@@ -568,7 +568,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6407085531315999052}
   - component: {fileID: 4763078218588360587}
-  - component: {fileID: 7271326109384779186}
   m_Layer: 0
   m_Name: SpriteCamera
   m_TagString: Untagged
@@ -633,14 +632,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &7271326109384779186
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6049539196006128157}
-  m_Enabled: 1
 --- !u!1001 &2603615622320421842
 PrefabInstance:
   m_ObjectHideFlags: 0
