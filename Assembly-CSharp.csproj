@@ -199,12 +199,12 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\Clock.cs" />
-    <Compile Include="Assets\Scripts\ComputerScreen.cs" />
-    <Compile Include="Assets\Scripts\ComputerWindow.cs" />
+    <Compile Include="Assets\Scripts\Computer\ComputerScreen.cs" />
+    <Compile Include="Assets\Scripts\Computer\ComputerWindow.cs" />
+    <Compile Include="Assets\Scripts\Computer\Mail.cs" />
+    <Compile Include="Assets\Scripts\Computer\MailController.cs" />
+    <Compile Include="Assets\Scripts\Computer\MailsWindow.cs" />
     <Compile Include="Assets\Scripts\FloatingSprite.cs" />
-    <Compile Include="Assets\Scripts\Mail.cs" />
-    <Compile Include="Assets\Scripts\MailController.cs" />
-    <Compile Include="Assets\Scripts\MailsWindow.cs" />
     <Compile Include="Assets\Scripts\MovementNode.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\Interactions\ComputerInteraction.cs" />

@@ -1,18 +1,19 @@
-﻿using Assets.Scripts.SelectableObject.Interactions;
+﻿using Assets.Scripts.Computer;
+using Assets.Scripts.SelectableObject.Interactions;
 using Assets.Scripts.Tasks;
 using UnityEngine;
 
 public class ComputerInteraction : TaskInteraction
 {
 
-    public Canvas screenCanvas;
     public MovementNode requiredMovementNode;
-    public MailsWindow mailsWindow;
-    public MailController mailController;
 
     private PlayerController player;
     private InteractionTask mailTask;
     private InteractionTask documentTask;
+    private MailsWindow mailsWindow;
+    private MailController mailController;
+    private ComputerScreen computerScreen;
 
     private PlayerController Player
     {
@@ -26,7 +27,7 @@ public class ComputerInteraction : TaskInteraction
             return player;
         }
     }
-    public InteractionTask MailTask
+    private InteractionTask MailTask
     {
         get
         {
@@ -38,7 +39,7 @@ public class ComputerInteraction : TaskInteraction
             return mailTask;
         }
     }
-    public InteractionTask DocumentTask
+    private InteractionTask DocumentTask
     {
         get
         {
@@ -50,6 +51,43 @@ public class ComputerInteraction : TaskInteraction
             return documentTask;
         }
     }
+    private MailsWindow MailsWindow
+    {
+        get
+        {
+            if (mailsWindow == null)
+            {
+                mailsWindow = transform.GetComponentInChildren<MailsWindow>(true);
+            }
+
+            return mailsWindow;
+        }
+    }
+    private MailController MailController
+    {
+        get
+        {
+            if (mailController == null)
+            {
+                mailController = transform.GetComponentInChildren<MailController>(true);
+            }
+
+            return mailController;
+        }
+    }
+    private ComputerScreen ComputerScreen
+    {
+        get
+        {
+            if (computerScreen == null)
+            {
+                computerScreen = transform.GetComponentInChildren<ComputerScreen>(true);
+            }
+
+            return computerScreen;
+        }
+    }
+
 
     public override bool CanActivate()
     {
@@ -59,17 +97,17 @@ public class ComputerInteraction : TaskInteraction
 
     public override void Begin()
     {
-        screenCanvas.gameObject.SetActive(true);
+        ComputerScreen.Open();
         if (MailTask.IsActive())
         {
-            mailsWindow.Open();
-            mailController.OnMailSelected += (sender, mail) =>
+            MailsWindow.Open();
+            MailController.OnMailSelected += (sender, mail) =>
             {
                 Finish();
             };
-            mailsWindow.OnWindowClosed += (sender, args) =>
+            MailsWindow.OnWindowClosed += (sender, args) =>
             {
-                screenCanvas.gameObject.SetActive(false);
+                ComputerScreen.Close();
             };
         } 
         else if (DocumentTask.IsActive())
