@@ -13124,7 +13124,7 @@ PrefabInstance:
     - target: {fileID: 6923866533914357510, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.325
+      value: 1.512
       objectReference: {fileID: 0}
     - target: {fileID: 6923866533914357510, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
@@ -13174,7 +13174,7 @@ PrefabInstance:
     - target: {fileID: 6923866533914357510, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.8
+      value: 1.952
       objectReference: {fileID: 0}
     - target: {fileID: 6923866533914357510, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
@@ -13224,12 +13224,62 @@ PrefabInstance:
     - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
       propertyPath: Conversation
-      value: "none;Hi\r\nI'm Alex;Hi Alex, I'm Couch Girl\r\nC\nLike it here?;Absolutely.
-        We have a great team, which\r gets along very well even besides the work\r\nWhy
-        is that?;I always have new tasks that I can do and I always have to deal with
-        new people\r\nC\nCouch Girl?;I barely do any work. I work it so Bossman can't
-        fire me. I basicly hang out here and watch movies most of the time.\r\nCan
-        I do that?;Nah you're a desk jokey, you are too easily replaceable"
+      value: 'none;Hello, I''m Charline.
+
+        Hi, I''m Alex.;Nice to meet you.
+
+        What''s going on in the kitchen today?;It''s Anton''s birthday, and he brought
+        a cake. Take a piece too.
+
+        With pleasure.;The cake is very delicious.
+
+        C
+
+        Do you like working on this team?;Absolutely. We have a great team, which
+        gets along very well even outside work.
+
+        How is social interaction with each other?;In our team as well as with our
+        boss we are all friendly and informal. Some department heads like to stay
+        more formal. I''m acting formally with the whole management, but we exchange
+        ideas normally and politely.
+
+        Do you like working here?;I enjoy my work very much.
+
+        Why is that?;I always have new tasks that I can do and meet new people.
+
+        That sounds very good. So not boring at all?;On the contrary, my work is very
+        varied and always exciting.
+
+        How satisfied are you with the whole company?;Like all companies, there are
+        some things here that could be better. But they are outnumbered. The processes
+        and structures are well organized, and everyone knows what and how to do their
+        work.
+
+        Thanks for all the information.;You''re welcome.
+
+        C
+
+        Do you like working here?;I enjoy my work very much.
+
+        Why is that?;I always have new tasks that I can do and meet new people.
+
+        That sounds very good. So not boring at all?;On the contrary, my work is very
+        varied and always exciting.
+
+        How satisfied are you with the whole company?;Like all companies, there are
+        some things here that could be better. But they are outnumbered. The processes
+        and structures are well organized, and everyone knows what and how to do their
+        work.
+
+        Do you like working on this team?;Absolutely. We have a great team, which
+        gets along very well even outside work.
+
+        How is social interaction with each other?; In our team as well as with our
+        boss we are all friendly and informal. Some department heads like to stay
+        more formal. I''m acting formally with the whole management, but we exchange
+        ideas normally and politely.
+
+        Thanks for all the information.;You''re welcome.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1cef448d5c2941469dd64a665d17950, type: 3}
@@ -18037,7 +18087,7 @@ PrefabInstance:
     - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
       propertyPath: Conversation
-      value: "none;Hello.\nHello, I'm Alex.; My name is Emil.\nC\nIs there a given
+      value: "none;Hello.\nHello, I'm Alex.;My name is Emil.\nC\nIs there a given
         seating arrangement?;We always sit in the same place, so we don't have to
         search for a seat.\nWhere is my place?;I don't know. You'll have to ask the
         boss.\nOk, thanks.; You're welcome.\nHow do these meetings usually work?;We
@@ -20312,6 +20362,10 @@ PrefabInstance:
     - target: {fileID: 400036, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 94.99901
+      objectReference: {fileID: 0}
+    - target: {fileID: 400046, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400048, guid: be65d7d25a2e9ad43bb2f00083ebad14, type: 3}
       propertyPath: m_LocalPosition.x
