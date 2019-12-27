@@ -10,21 +10,35 @@ namespace Assets.Scripts.Tasks
         public string title;
         public Task nextTask;
 
-        private SimulationController simCol;
+        private TaskIndicator taskIndicator;
+        private SimulationController simulationController;
+        private bool isActive;
 
-        private SimulationController SimulationController
+        protected SimulationController SimulationController
         {
             get
             {
-                if (simCol == null)
+                if (simulationController == null)
                 {
-                    simCol = FindObjectOfType<SimulationController>();
+                    simulationController = FindObjectOfType<SimulationController>();
                 }
 
-                return simCol;
+                return simulationController;
             }
         }
-        private bool isActive;
+
+        protected TaskIndicator TaskIndicator
+        {
+            get
+            {
+                if (taskIndicator == null)
+                {
+                    taskIndicator = FindObjectOfType<TaskIndicator>();
+                }
+
+                return taskIndicator;
+            }
+        }
 
         public void Begin()
         {

@@ -8,6 +8,7 @@ namespace Assets.Scripts.SelectableObject.Interactions
         public MovementNode requiredPosition;
 
         private PlayerController player;
+
         private PlayerController Player
         {
             get
@@ -28,6 +29,14 @@ namespace Assets.Scripts.SelectableObject.Interactions
         public override bool CanActivate()
         {
             return requiredPosition != null && requiredPosition == Player.CurrentMovementPoint;
+        }
+
+        public void Update()
+        {
+            if (base.IsActive() && !audioSource.isPlaying)
+            {
+                Finish();
+            }
         }
 
         public override bool IsActive()

@@ -201,6 +201,7 @@
     <Compile Include="Assets\Scripts\Clock.cs" />
     <Compile Include="Assets\Scripts\Computer\ComputerScreen.cs" />
     <Compile Include="Assets\Scripts\Computer\ComputerWindow.cs" />
+    <Compile Include="Assets\Scripts\Computer\EditorWindow.cs" />
     <Compile Include="Assets\Scripts\Computer\Mail.cs" />
     <Compile Include="Assets\Scripts\Computer\MailController.cs" />
     <Compile Include="Assets\Scripts\Computer\MailsWindow.cs" />

@@ -10,7 +10,7 @@ namespace Assets.Scripts.Tasks
         protected override void BeginTask()
         {
             movementNode.OnPlayerEnter += PlayerMovedToTarget;
-            FindObjectOfType<TaskIndicator>().MoveTo(movementNode.transform);
+            TaskIndicator.MoveTo(movementNode.transform);
         }
 
         private void PlayerMovedToTarget(object sender, EventArgs e)

@@ -13,6 +13,7 @@ namespace Assets.Scripts.SelectableObject.Interactions
         private InteractionTask documentTask;
         private MailsWindow mailsWindow;
         private MailController mailController;
+        private EditorWindow editorWindow;
         private ComputerScreen computerScreen;
 
         private PlayerController Player
@@ -75,6 +76,18 @@ namespace Assets.Scripts.SelectableObject.Interactions
                 return mailController;
             }
         }
+        private EditorWindow EditorWindow
+        {
+            get
+            {
+                if (editorWindow == null)
+                {
+                    editorWindow = transform.GetComponentInChildren<EditorWindow>(true);
+                }
+
+                return editorWindow;
+            }
+        }
         private ComputerScreen ComputerScreen
         {
             get
@@ -112,7 +125,12 @@ namespace Assets.Scripts.SelectableObject.Interactions
             } 
             else if (DocumentTask.IsActive())
             {
-                // TODO: implement document task
+                EditorWindow.Open();
+                EditorWindow.OnWindowClosed += (sender, args) =>
+                {
+                    Finish();
+                    ComputerScreen.Close();
+                };
             }
         }
 

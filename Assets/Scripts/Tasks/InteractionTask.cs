@@ -10,6 +10,7 @@ namespace Assets.Scripts.Tasks
         protected override void BeginTask()
         {
             interaction.OnInteractionFinished += InteractionFinished;
+            TaskIndicator.MoveTo(interaction.transform);
         }
 
         private void InteractionFinished(object sender, EventArgs e)
