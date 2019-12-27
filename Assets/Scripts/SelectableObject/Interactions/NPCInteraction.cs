@@ -18,6 +18,7 @@ namespace Assets.Scripts.SelectableObject.Interactions
                 {
                     player = FindObjectOfType<PlayerController>();
                 }
+
                 return player;
             }
         }

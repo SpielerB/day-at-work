@@ -16,7 +16,7 @@ namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
         public NPCInteraction parent;
         public TextMeshProUGUI textBox;
         public GameObject dialogueBox;
-        public TextMeshProUGUI[] buttons = new TextMeshProUGUI[4];
+        public TextMeshProUGUI[] buttons = new TextMeshProUGUI[2];
         [TextArea(3, 10)]
         public string conversation = "This text will appear in a text area that automatically expands";
 

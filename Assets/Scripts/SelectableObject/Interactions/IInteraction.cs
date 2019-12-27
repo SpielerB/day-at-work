@@ -5,6 +5,8 @@
 
         bool CanActivate();
 
+        bool IsAlwaysHighlighted();
+
         bool IsActive();
 
         void Activate();

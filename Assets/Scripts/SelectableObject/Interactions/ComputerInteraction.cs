@@ -120,7 +120,6 @@ namespace Assets.Scripts.SelectableObject.Interactions
                 };
                 MailsWindow.OnWindowClosed += (sender, args) =>
                 {
-                    ComputerScreen.Close();
                     Finish();
                 };
             } 
@@ -135,5 +134,6 @@ namespace Assets.Scripts.SelectableObject.Interactions
             }
         }
 
+        public override bool IsAlwaysHighlighted() => false;
     }
 }

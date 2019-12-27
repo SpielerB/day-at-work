@@ -29,5 +29,7 @@ namespace Assets.Scripts.SelectableObject.Interactions
 
         public abstract void Begin();
         public abstract bool CanActivate();
+
+        public virtual bool IsAlwaysHighlighted() => true;
     }
 }
