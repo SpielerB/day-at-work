@@ -468,10 +468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8a0e61571dd3ed4e82c16d141c190e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenCanvas: {fileID: 1980207211783766451}
   requiredMovementNode: {fileID: 0}
-  mailsWindow: {fileID: 0}
-  mailController: {fileID: 0}
 --- !u!114 &3330297039918887385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3470,7 +3467,7 @@ PrefabInstance:
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: content
-      value: "Dear Mrs. M\xFCller\r\n\r\nAs discussed, I will send you the requested
+      value: "Dear Mr. M\xFCller\r\n\r\nAs discussed, I will send you the requested
         documents in the appendix. \r\nI ask you to prepare them for the participants
         of the coming week and to give me a short feedback regarding position 3 of
         the first document whether this is okay for you as noted.\r\n\r\nYours sincerely\r\nMarkus
