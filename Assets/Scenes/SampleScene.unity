@@ -3946,7 +3946,7 @@ PrefabInstance:
     - target: {fileID: 2225488147324356795, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6362723927104634781, guid: 0367de5392dc29f428e6b9c1b9be9dfe,
         type: 3}
@@ -18105,6 +18105,11 @@ PrefabInstance:
         where is my place?;I don't know. You'll have to ask the boss.\r\nOk, thanks.;So,
         I think it's about to start. Enjoy your first meeting.\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 6923866533914357518, guid: c1cef448d5c2941469dd64a665d17950,
+        type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 396073787}
     - target: {fileID: 6923866534601638527, guid: c1cef448d5c2941469dd64a665d17950,
         type: 3}
       propertyPath: m_textInfo.characterCount
