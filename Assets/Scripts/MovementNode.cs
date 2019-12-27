@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -7,10 +8,16 @@ namespace Assets.Scripts
 {
     public class MovementNode : MonoBehaviour
     {
+        public event EventHandler OnPlayerEnter;
+        public event EventHandler OnPlayerLeave;
+        private void PlayerEnter() => OnPlayerEnter?.Invoke(this, EventArgs.Empty);
+        private void PlayerLeave() => OnPlayerLeave?.Invoke(this, EventArgs.Empty);
+
+
         public Image interactionTimerIndicator;
         [Tooltip("How many seconds until the player moves to this MovementPoint")]
         public float movementDelay = 1.5f;
-    
+
         private float step;
         private float timer;
         private bool lookingAt;
@@ -54,7 +61,9 @@ namespace Assets.Scripts
                 timer += Time.deltaTime;
                 return;
             }
+            Player.CurrentMovementPoint?.PlayerLeave();
             Player.MoveTo(this);
+            PlayerEnter();
             LookAt(false);
             interactionTimerIndicator.fillAmount = 0;
         }

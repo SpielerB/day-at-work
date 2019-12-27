@@ -220,8 +220,10 @@
     <Compile Include="Assets\Scripts\Tasks\ComputerInteractionDocumentTask.cs" />
     <Compile Include="Assets\Scripts\Tasks\ComputerInteractionMailTask.cs" />
     <Compile Include="Assets\Scripts\Tasks\InteractionTask.cs" />
+    <Compile Include="Assets\Scripts\Tasks\MovementTask.cs" />
     <Compile Include="Assets\Scripts\Tasks\Task.cs" />
     <Compile Include="Assets\Scripts\Tasks\TaskController.cs" />
+    <Compile Include="Assets\Scripts\Tasks\TaskIndicator.cs" />
     <Compile Include="Assets\Scripts\Utils\StringUtilities.cs" />
     <Compile Include="Assets\StarfieldMaterials\Scripts\Move.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

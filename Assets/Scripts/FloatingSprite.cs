@@ -8,8 +8,7 @@ namespace Assets.Scripts
         public float amplitude = 0.25f;
         public float frequency = 1.25f;
 
-        private Vector3 offset;
-        private Vector3 position;
+        protected Vector3 offset;
 
         [SuppressMessage("ReSharper", "UnusedMember.Local")]
         private void Start()
@@ -18,9 +17,9 @@ namespace Assets.Scripts
         }
 
         [SuppressMessage("ReSharper", "UnusedMember.Local")]
-        private void Update()
+        protected void Update()
         {
-            position = offset;
+            var position = offset;
             position.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
 
             transform.position = position;

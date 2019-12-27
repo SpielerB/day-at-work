@@ -20127,6 +20127,11 @@ PrefabInstance:
       propertyPath: interaction
       value: 
       objectReference: {fileID: 1417838113}
+    - target: {fileID: 3216902521022756761, guid: 722025d3d0f74404581d4281038e4e51,
+        type: 3}
+      propertyPath: movementNode
+      value: 
+      objectReference: {fileID: 1393204820}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 722025d3d0f74404581d4281038e4e51, type: 3}
 --- !u!1001 &1455099654
