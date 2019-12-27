@@ -9,8 +9,11 @@ namespace Assets.Scripts
 
         public uint? startHour;
         public uint? startMinute;
+        public CanvasGroup endScreen;
 
         private DateTime now;
+        private bool isSimulationEnding = false;
+        private float simulationEndTimer = 0;
 
         [SuppressMessage("ReSharper", "UnusedMember.Local")]
         private void Start()
@@ -41,12 +44,22 @@ namespace Assets.Scripts
         public void SetTime(uint hour, uint minute)
         {
             now = now.Date.AddHours(hour).AddMinutes(minute);
+        }
 
+        public void Update()
+        {
+            if (!isSimulationEnding) return;
+            endScreen.alpha += (Time.deltaTime / 4);
+            if (simulationEndTimer++ > 10)
+            {
+                Application.Quit();
+            }
         }
 
         public void EndSimulation()
         {
-            Application.Quit();
+            endScreen.gameObject.SetActive(true);
+            isSimulationEnding = true;
         }
 
     }

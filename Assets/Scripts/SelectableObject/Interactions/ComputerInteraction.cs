@@ -9,7 +9,7 @@ namespace Assets.Scripts.SelectableObject.Interactions
         public MovementNode requiredMovementNode;
 
         private PlayerController player;
-        private InteractionTask mailTask;
+        private ComputerInteractionMailTask mailTask;
         private InteractionTask documentTask;
         private MailsWindow mailsWindow;
         private MailController mailController;
@@ -28,7 +28,7 @@ namespace Assets.Scripts.SelectableObject.Interactions
                 return player;
             }
         }
-        private InteractionTask MailTask
+        private ComputerInteractionMailTask MailTask
         {
             get
             {
@@ -116,11 +116,12 @@ namespace Assets.Scripts.SelectableObject.Interactions
                 MailsWindow.Open();
                 MailController.OnMailSelected += (sender, mail) =>
                 {
-                    Finish();
+                    MailTask.Prime();
                 };
                 MailsWindow.OnWindowClosed += (sender, args) =>
                 {
                     ComputerScreen.Close();
+                    Finish();
                 };
             } 
             else if (DocumentTask.IsActive())

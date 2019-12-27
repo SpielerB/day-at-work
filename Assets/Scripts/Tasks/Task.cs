@@ -53,7 +53,15 @@ namespace Assets.Scripts.Tasks
         {
             if (!isActive) return;
             isActive = false;
-            if (nextTask != null) nextTask.Begin();
+            if (nextTask != null)
+            {
+                nextTask.Begin();
+            }
+            else
+            {
+                taskIndicator.gameObject.SetActive(false);
+                SimulationController.EndSimulation();
+            }
         }
 
         protected abstract void BeginTask();

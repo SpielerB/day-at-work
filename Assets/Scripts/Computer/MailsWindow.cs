@@ -20,6 +20,6 @@ namespace Assets.Scripts.Computer
             }
         }
 
-        public override bool CanClose() => !MailTask.IsActive();
+        public override bool CanClose() => MailTask.CanFinish();
     }
 }

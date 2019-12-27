@@ -63,9 +63,9 @@ namespace Assets.Scripts
             }
             Player.CurrentMovementPoint?.PlayerLeave();
             Player.MoveTo(this);
-            PlayerEnter();
             LookAt(false);
             interactionTimerIndicator.fillAmount = 0;
+            PlayerEnter();
         }
 
         public void LookAt(bool look)
