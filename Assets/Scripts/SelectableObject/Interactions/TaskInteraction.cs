@@ -12,7 +12,7 @@ namespace Assets.Scripts.SelectableObject.Interactions
 
         private bool isActive;
 
-        public bool IsActive() => isActive;
+        public virtual bool IsActive() => isActive;
 
         public void Activate()
         {

@@ -2,7 +2,7 @@
 
 namespace Assets.Scripts.SelectableObject.Interactions
 {
-    public class SoundInteraction : MonoBehaviour, IInteraction
+    public class SoundInteraction : TaskInteraction
     {
         public AudioSource audioSource;
         public MovementNode requiredPosition;
@@ -20,18 +20,19 @@ namespace Assets.Scripts.SelectableObject.Interactions
             }
         }
 
-        public bool CanActivate()
+        public override void Begin()
+        {
+            audioSource.Play();
+        }
+
+        public override bool CanActivate()
         {
             return requiredPosition != null && requiredPosition == Player.CurrentMovementPoint;
         }
 
-        public bool IsActive()
+        public override bool IsActive()
         {
-            return audioSource.isPlaying;
-        }
-        public void Activate()
-        {
-            audioSource.Play();
+            return audioSource.isPlaying && base.IsActive();
         }
 
     }
