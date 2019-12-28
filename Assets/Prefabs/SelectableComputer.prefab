@@ -149,7 +149,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.5, y: 0}
+  m_AnchoredPosition: {x: 18, y: 0}
   m_SizeDelta: {x: -27, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8793059221531105063
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 121.58379, y: 0, z: 0, w: 0}
+  m_margin: {x: 121.58379, y: 0, z: 33.750164, w: 0}
   m_textInfo:
     textComponent: {fileID: 617130604413416674}
     characterCount: 22
@@ -807,7 +807,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Betreff: '
+  m_text: 'Subject: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Keine Mail ausgew\xE4hlt"
+  m_text: No mail selected
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1120,7 +1120,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 661.3011, w: 0}
   m_textInfo:
     textComponent: {fileID: 3651657382141653667}
-    characterCount: 21
+    characterCount: 16
     spriteCount: 0
     spaceCount: 2
     wordCount: 3
@@ -1543,7 +1543,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Von:'
+  m_text: 'From:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1609,10 +1609,10 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 1055.1837, w: 0}
+  m_margin: {x: 0, y: 0, z: 1052.0587, w: 0}
   m_textInfo:
     textComponent: {fileID: 315245888408830069}
-    characterCount: 4
+    characterCount: 5
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -2464,16 +2464,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f12cdc65f0b0d84cab2a29b4d484344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contentToWrite: 'Hello there
-
-
-    My name is Vitu
-
-    Can you help me? I need someone to kill a certain annoying person -.-
-
-
-    Regards Vitu'
-  charsPerSecond: 12
+  contentToWrite: "Information regarding the upcoming changes in the office structure
+    \r\n\r\nAs you all know our office will undergo some structural changes within
+    the next few months. This document serves the purpose of guiding you through the
+    upcoming changes and how you, as an em-ployee, fit into the whole process. \n
+    \r\n  1. You will have to temporarily relocate to another floor. \r\n  You will
+    have to take ALL your belongings with you to avoid them being thrown away. \r\n
+    \r\n  2. Please leave all non-personal belongings at your current work place.
+    \r\n \r\n  3. You may be assigned a new desk upon returning to the current floor.
+    \r\n    \r\n\r\nThe temporary work place will be communicated one week prior to
+    the move, please be ready on time. If \nthere are any issues with the impending
+    move, please be sure to report them as soon as possible. Please understand that
+    we won\u2019t be able to make changes to the schedule on short notice. \r\n \r\nThank
+    you for your cooperation \r\n \r\nAlex M\xFCller and the administration  "
+  charsPerSecond: 24
   closingDelay: 4
   target: {fileID: 1406464623309085637}
 --- !u!1 &3890976033350637545
@@ -3012,7 +3016,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -22.5, y: 0}
+  m_AnchoredPosition: {x: 2, y: 0}
   m_SizeDelta: {x: 25, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8146543748070214614
@@ -3107,7 +3111,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 121.58379, y: 0, z: 0, w: 0}
+  m_margin: {x: 121.58379, y: 0, z: 54.474194, w: 0}
   m_textInfo:
     textComponent: {fileID: 4283646482184222914}
     characterCount: 21
@@ -3398,7 +3402,7 @@ PrefabInstance:
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: title
-      value: Mail 5
+      value: New project
       objectReference: {fileID: 0}
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
@@ -3408,7 +3412,7 @@ PrefabInstance:
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: content
-      value: Fifth Mail
+      value: "Dear Mr M\xFCller"
       objectReference: {fileID: 0}
     - target: {fileID: 9149643540471946353, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
@@ -3593,7 +3597,7 @@ PrefabInstance:
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: content
-      value: "Dear Mr. M\xFCller\r\n\r\nAs discussed, I will send you the requested
+      value: "Dear Mr M\xFCller\r\n\r\nAs discussed, I will send you the requested
         documents in the appendix. \r\nI ask you to prepare them for the participants
         of the coming week and to give me a short feedback regarding position 3 of
         the first document whether this is okay for you as noted.\r\n\r\nYours sincerely\r\nMarkus
@@ -3762,7 +3766,7 @@ PrefabInstance:
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: title
-      value: Mail 4
+      value: Latest office gossip
       objectReference: {fileID: 0}
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
@@ -3772,7 +3776,7 @@ PrefabInstance:
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: content
-      value: Fourth Mail
+      value: Have you heard?!
       objectReference: {fileID: 0}
     - target: {fileID: 9149643540471946353, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
@@ -3962,7 +3966,7 @@ PrefabInstance:
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: title
-      value: Mail 6
+      value: Newsletter Microsoft
       objectReference: {fileID: 0}
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
@@ -3972,7 +3976,7 @@ PrefabInstance:
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: content
-      value: Sixth Mail
+      value: Hello from Microsoft
       objectReference: {fileID: 0}
     - target: {fileID: 9149643540471946353, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
@@ -4162,7 +4166,7 @@ PrefabInstance:
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: title
-      value: Mail 2
+      value: "Welcome Mr M\xFCller"
       objectReference: {fileID: 0}
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
@@ -4172,7 +4176,7 @@ PrefabInstance:
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: content
-      value: Second Mail
+      value: "Dear Mr M\xFCller"
       objectReference: {fileID: 0}
     - target: {fileID: 9149643540471946353, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
@@ -4362,7 +4366,7 @@ PrefabInstance:
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: title
-      value: Mail 3
+      value: Office Meeting
       objectReference: {fileID: 0}
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
@@ -4372,7 +4376,7 @@ PrefabInstance:
     - target: {fileID: 8115337826244187914, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
       propertyPath: content
-      value: Third Mail
+      value: Dear Team
       objectReference: {fileID: 0}
     - target: {fileID: 9149643540471946353, guid: 96421b34c9b79cd4b8a93536010a2f42,
         type: 3}
