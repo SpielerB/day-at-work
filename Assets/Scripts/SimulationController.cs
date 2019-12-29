@@ -50,7 +50,7 @@ namespace Assets.Scripts
         {
             if (!isSimulationEnding) return;
             endScreen.alpha += (Time.deltaTime / 4);
-            if (simulationEndTimer++ > 10)
+            if ((simulationEndTimer += Time.deltaTime) > 10)
             {
                 Application.Quit();
             }
