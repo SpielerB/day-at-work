@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace Assets.Scripts.SelectableObject
 {
-    public class Selectable : Outline
+    public class Selectable : MonoBehaviour
     {
         private Color normColor = Color.white;
         private float normWidth;
@@ -14,14 +14,16 @@ namespace Assets.Scripts.SelectableObject
         private bool active;
         private bool isLookedAt;
 
-        private Selectable selected;
+        private Outline outline;
         private IInteraction interaction;
 
         private void Start()
         {
-            selected = GetComponent<Selectable>();
-            normColor = selected.OutlineColor;
-            normWidth = selected.OutlineWidth;
+            // Due to a bug in the Outline code, we can't simply inherit outline,
+            // we have to add and enable/disable it to make it invisible
+            outline = gameObject.AddComponent<Outline>();
+            normColor = outline.OutlineColor;
+            normWidth = 20;
             spezWidth = normWidth + 5;
             spezColor = new Color(normColor.r, normColor.g + 1, normColor.b);
             interaction = GetComponent<IInteraction>();
@@ -44,28 +46,30 @@ namespace Assets.Scripts.SelectableObject
         {
             if (active || !interaction.CanActivate() && !interaction.IsAlwaysHighlighted())
             {
-                selected.OutlineWidth = 0;
+                if (outline.enabled) outline.enabled = false;
+                return;
             }
-            else if (isLookedAt && interaction.CanActivate())
+            if (!outline.enabled) outline.enabled = true;
+
+            if (isLookedAt && interaction.CanActivate())
             {
-                selected.OutlineColor = spezColor;
-                selected.OutlineWidth = spezWidth;
+                outline.OutlineColor = spezColor;
+                outline.OutlineWidth = spezWidth;
             }
             else
             {
-                selected.OutlineColor = normColor;
-                selected.OutlineWidth = normWidth;
+                outline.OutlineColor = normColor;
+                outline.OutlineWidth = normWidth;
             }
         }
 
-        protected override void Update()
+        protected void Update()
         {
             if (active && !interaction.IsActive())
             {
                 active = false;
             }
             UpdateOutline();
-            base.Update();
         }
 
         public void LookAt(bool isLookedAt)
@@ -79,8 +83,8 @@ namespace Assets.Scripts.SelectableObject
             if (active || !interaction.CanActivate()) return;
             interaction.Activate();
             active = true;
+            outline.enabled = false;
             UpdateOutline();
-
         }
 
     }
