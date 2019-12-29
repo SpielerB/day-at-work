@@ -5,7 +5,7 @@
 
         bool CanActivate();
 
-        bool IsAlwaysHighlighted();
+        OutlineMode OutlineMode { get; }
 
         bool IsActive();
 

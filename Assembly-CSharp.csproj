@@ -208,6 +208,7 @@
     <Compile Include="Assets\Scripts\FloatingSprite.cs" />
     <Compile Include="Assets\Scripts\MovementNode.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerFacingSprite.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\Interactions\ComputerInteraction.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\Interactions\IInteraction.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\Interactions\NPCInteraction.cs" />
@@ -216,6 +217,7 @@
     <Compile Include="Assets\Scripts\SelectableObject\NPCs\State Machines\GenericNPCConversation.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\NPCs\State Machines\NPCDialogue.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\NPCs\States\AbstractState.cs" />
+    <Compile Include="Assets\Scripts\SelectableObject\OutlineMode.cs" />
     <Compile Include="Assets\Scripts\SelectableObject\Selectable.cs" />
     <Compile Include="Assets\Scripts\SimulationController.cs" />
     <Compile Include="Assets\Scripts\Tasks\ComputerInteractionDocumentTask.cs" />

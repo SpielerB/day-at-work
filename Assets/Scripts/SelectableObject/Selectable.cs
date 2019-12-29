@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.SelectableObject.Interactions;
+﻿using System.Diagnostics.CodeAnalysis;
+using Assets.Scripts.SelectableObject.Interactions;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -6,26 +7,30 @@ namespace Assets.Scripts.SelectableObject
 {
     public class Selectable : MonoBehaviour
     {
+
         private Color normColor = Color.white;
         private float normWidth;
 
-        private Color spezColor;
-        private float spezWidth;
+        private Color hoverColor;
+        private float hoverWidth;
         private bool active;
         private bool isLookedAt;
 
         private Outline outline;
         private IInteraction interaction;
 
+        [SuppressMessage("ReSharper", "UnusedMember.Local")]
         private void Start()
         {
             // Due to a bug in the Outline code, we can't simply inherit outline,
             // we have to add and enable/disable it to make it invisible
             outline = gameObject.AddComponent<Outline>();
+            outline.enabled = true;
             normColor = outline.OutlineColor;
-            normWidth = 20;
-            spezWidth = normWidth + 5;
-            spezColor = new Color(normColor.r, normColor.g + 1, normColor.b);
+            normWidth = outline.OutlineWidth;
+            hoverWidth = normWidth + 5;
+            hoverColor = new Color(normColor.r, normColor.g + 1, normColor.b);
+
             interaction = GetComponent<IInteraction>();
 
             var trigger = gameObject.AddComponent<EventTrigger>();
@@ -44,7 +49,11 @@ namespace Assets.Scripts.SelectableObject
 
         private void UpdateOutline()
         {
-            if (active || !interaction.CanActivate() && !interaction.IsAlwaysHighlighted())
+            var hideOutline = active
+                              || !interaction.CanActivate() && interaction.OutlineMode == OutlineMode.ActivatableOnly
+                              || interaction.OutlineMode == OutlineMode.HoverOnly && (!isLookedAt || !interaction.CanActivate());
+                              
+            if (hideOutline)
             {
                 if (outline.enabled) outline.enabled = false;
                 return;
@@ -53,8 +62,8 @@ namespace Assets.Scripts.SelectableObject
 
             if (isLookedAt && interaction.CanActivate())
             {
-                outline.OutlineColor = spezColor;
-                outline.OutlineWidth = spezWidth;
+                outline.OutlineColor = hoverColor;
+                outline.OutlineWidth = hoverWidth;
             }
             else
             {
@@ -72,9 +81,9 @@ namespace Assets.Scripts.SelectableObject
             UpdateOutline();
         }
 
-        public void LookAt(bool isLookedAt)
+        public void LookAt(bool isLookingAt)
         {
-            this.isLookedAt = isLookedAt;
+            isLookedAt = isLookingAt;
             UpdateOutline();
         }
 

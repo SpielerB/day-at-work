@@ -134,6 +134,6 @@ namespace Assets.Scripts.SelectableObject.Interactions
             }
         }
 
-        public override bool IsAlwaysHighlighted() => false;
+        public override OutlineMode OutlineMode => OutlineMode.ActivatableOnly;
     }
 }

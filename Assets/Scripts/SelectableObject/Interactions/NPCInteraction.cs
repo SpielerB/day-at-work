@@ -57,5 +57,7 @@ namespace Assets.Scripts.SelectableObject.Interactions
             OnInteractionFinished -= OnFinish;
             TaskController.ShowTaskList();
         }
+
+        public override OutlineMode OutlineMode => OutlineMode.HoverOnly;
     }
 }
