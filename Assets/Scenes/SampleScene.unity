@@ -13554,6 +13554,11 @@ PrefabInstance:
       propertyPath: m_BlocksRaycasts
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4763078218588360587, guid: 20c8590d7dcb0324faaf7d822259e38b,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.09
+      objectReference: {fileID: 0}
     - target: {fileID: 3977946448646866697, guid: 20c8590d7dcb0324faaf7d822259e38b,
         type: 3}
       propertyPath: m_IsActive
@@ -21368,7 +21373,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -3.73
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 175985998061963791, guid: 6f15727366c23cc42afededabddd4f96, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6f15727366c23cc42afededabddd4f96, type: 3}
 --- !u!114 &1494257029 stripped
 MonoBehaviour:
