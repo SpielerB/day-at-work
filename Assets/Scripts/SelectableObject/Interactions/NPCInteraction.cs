@@ -1,5 +1,7 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using Assets.Scripts.SelectableObject.NPCs.State_Machines;
+using Assets.Scripts.Tasks;
 
 namespace Assets.Scripts.SelectableObject.Interactions
 {
@@ -9,6 +11,8 @@ namespace Assets.Scripts.SelectableObject.Interactions
         public NPCDialogue machine;
         public MovementNode requiredPosition;
 
+
+        private TaskController taskController;
         private PlayerController player;
         private PlayerController Player
         {
@@ -23,14 +27,35 @@ namespace Assets.Scripts.SelectableObject.Interactions
             }
         }
 
+        private TaskController TaskController
+        {
+            get
+            {
+                if (taskController == null)
+                {
+                    taskController = FindObjectOfType<TaskController>();
+                }
+
+                return taskController;
+            }
+        }
+
         public override void Begin()
         {
+            TaskController.HideTaskList();
+            OnInteractionFinished += OnFinish;
             machine.ConvStart();
         }
 
         public override bool CanActivate()
         {
             return requiredPosition != null && requiredPosition == Player.CurrentMovementPoint;
+        }
+
+        private void OnFinish(object sender, EventArgs args)
+        {
+            OnInteractionFinished -= OnFinish;
+            TaskController.ShowTaskList();
         }
     }
 }

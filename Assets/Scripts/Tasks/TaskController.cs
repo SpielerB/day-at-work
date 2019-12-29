@@ -11,6 +11,16 @@ namespace Assets.Scripts.Tasks
         public TextMeshProUGUI taskList;
         public Task initialTask;
 
+        public void ShowTaskList()
+        {
+            taskList.gameObject.SetActive(true);
+        }
+
+        public void HideTaskList()
+        {
+            taskList.gameObject.SetActive(false);
+        }
+
         [SuppressMessage("ReSharper", "UnusedMember.Local")]
         private void Start()
         {
