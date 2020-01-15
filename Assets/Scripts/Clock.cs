@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
+    /**
+     * Handles the in-game clock
+     */
     public class Clock : MonoBehaviour
     {
 

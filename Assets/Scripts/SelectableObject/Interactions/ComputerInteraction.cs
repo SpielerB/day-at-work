@@ -3,9 +3,14 @@ using Assets.Scripts.Tasks;
 
 namespace Assets.Scripts.SelectableObject.Interactions
 {
+    /**
+     * This class handles all the computer interactions an the corresponding tasks
+     */
     public class ComputerInteraction : TaskInteraction
     {
-
+        /**
+         * The movement node where the player has to stand to activate the computer
+         */
         public MovementNode requiredMovementNode;
 
         private PlayerController player;
@@ -108,7 +113,7 @@ namespace Assets.Scripts.SelectableObject.Interactions
                    && (requiredMovementNode == null || Player.CurrentMovementPoint == requiredMovementNode);
         }
 
-        public override void Begin()
+        protected override void Begin()
         {
             ComputerScreen.Open();
             if (MailTask.IsActive())

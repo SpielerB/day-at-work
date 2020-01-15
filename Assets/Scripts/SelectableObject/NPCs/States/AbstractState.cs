@@ -3,19 +3,25 @@ using System.Collections.Generic;
 using Assets.Scripts.SelectableObject.Interactions;
 using UnityEngine;
 
+/**
+ * This class holds the state of a NPC dialogue
+ */
 public abstract class AbstractState
 {
 
     private NPCInteraction context;
 
+    /**
+     * Initializes the state
+     */
     public void Init(NPCInteraction interaction)
     {
         context = interaction;
     }
 
-    public abstract void DialogueStart();
-    public abstract void PlayerTalks();
-    public abstract void NPCTalks();
+    /**
+     * Exits the dialogue state
+     */
     public void Exit()
     {
         context.Finish();

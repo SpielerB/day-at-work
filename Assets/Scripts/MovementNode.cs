@@ -6,15 +6,31 @@ using UnityEngine.UI;
 
 namespace Assets.Scripts
 {
+    /**
+     * Manages a movement node
+     */
     public class MovementNode : MonoBehaviour
     {
+        /**
+         * Notifies listeners if the player enters the current node
+         */
         public event EventHandler OnPlayerEnter;
+
+        /**
+         * Notifies listeners if the player leaves the current node
+         */
         public event EventHandler OnPlayerLeave;
         private void PlayerEnter() => OnPlayerEnter?.Invoke(this, EventArgs.Empty);
         private void PlayerLeave() => OnPlayerLeave?.Invoke(this, EventArgs.Empty);
 
-
+        /**
+         * The indicator image
+         */
         public Image interactionTimerIndicator;
+
+        /**
+         * How long until the players moves in seconds
+         */
         [Tooltip("How many seconds until the player moves to this MovementPoint")]
         public float movementDelay = 1.5f;
 
@@ -61,13 +77,21 @@ namespace Assets.Scripts
                 timer += Time.deltaTime;
                 return;
             }
-            Player.CurrentMovementPoint?.PlayerLeave();
-            Player.MoveTo(this);
+
+            if (Player != null)
+            {
+                Player.CurrentMovementPoint?.PlayerLeave();
+                Player.MoveTo(this);
+            }
+
             LookAt(false);
             interactionTimerIndicator.fillAmount = 0;
             PlayerEnter();
         }
 
+        /**
+         * Handles looking at events
+         */
         public void LookAt(bool look)
         {
             lookingAt = look;

@@ -3,11 +3,19 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
+    /**
+     * Handles the player itself
+     */
     public class PlayerController : MonoBehaviour
     {
-
+        /**
+         * Where the player is positioned at the beginning of the simulation
+         */
         public MovementNode initialMovementPoint;
 
+        /**
+         * Holds the current movement point
+         */
         public MovementNode CurrentMovementPoint { get; private set; }
 
         [SuppressMessage("ReSharper", "UnusedMember.Local")]
@@ -19,6 +27,9 @@ namespace Assets.Scripts
             }
         }
 
+        /**
+         * Resets the players position to either the initial movement point or 0
+         */
         public void ResetPosition()
         {
             if (initialMovementPoint != null)
@@ -32,6 +43,9 @@ namespace Assets.Scripts
             }
         }
 
+        /**
+         * Moves to player to a specific movement node
+         */
         public void MoveTo(MovementNode point)
         {
             var target = point.transform.position;

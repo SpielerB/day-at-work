@@ -5,6 +5,9 @@ using UnityEngine.EventSystems;
 
 namespace Assets.Scripts.SelectableObject
 {
+    /**
+     * This class manages selectable objects
+     */
     public class Selectable : MonoBehaviour
     {
 
@@ -47,6 +50,9 @@ namespace Assets.Scripts.SelectableObject
             trigger.triggers.Add(pointerClick);
         }
 
+        /**
+         * Updates the outline for the current object based on the outline mode and other variables
+         */
         private void UpdateOutline()
         {
             var hideOutline = active
@@ -81,12 +87,18 @@ namespace Assets.Scripts.SelectableObject
             UpdateOutline();
         }
 
+        /**
+         * Used to change the current outline state
+         */
         public void LookAt(bool isLookingAt)
         {
             isLookedAt = isLookingAt;
             UpdateOutline();
         }
 
+        /**
+         * OnPointClickEventHandler
+         */
         public void PointerClick()
         {
             if (active || !interaction.CanActivate()) return;

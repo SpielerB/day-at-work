@@ -1,14 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 
-public class PlayerFacingSprite : MonoBehaviour
+namespace Assets.Scripts
 {
-
-    [SuppressMessage("ReSharper", "UnusedMember.Local")]
-    private void LateUpdate()
+    /**
+     * This class is used to turn the managed sprite towards the main camera
+     */
+    public class PlayerFacingSprite : MonoBehaviour
     {
-        transform.forward = Camera.main.transform.forward;
+
+        [SuppressMessage("ReSharper", "UnusedMember.Local")]
+        private void LateUpdate()
+        {
+            transform.forward = Camera.main.transform.forward;
+        }
     }
 }

@@ -2,6 +2,9 @@
 
 namespace Assets.Scripts.Computer
 {
+    /**
+     * The Window for mails on the simulated computer
+     */
     public class MailsWindow : ComputerWindow
     {
 

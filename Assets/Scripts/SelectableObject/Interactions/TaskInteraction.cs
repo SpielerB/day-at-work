@@ -3,9 +3,19 @@ using UnityEngine;
 
 namespace Assets.Scripts.SelectableObject.Interactions
 {
+    /**
+     * This class serves as base for all task related interactions
+     */
     public abstract class TaskInteraction : MonoBehaviour, IInteraction
     {
+        /**
+         * Listeners are notified once the interactions has been finished
+         */
         public event EventHandler OnInteractionFinished;
+
+        /**
+         * Listeners are notified once the interactions has been started
+         */
         public event EventHandler OnInteractionStarted;
         private void FinishInteraction() => OnInteractionFinished?.Invoke(this, EventArgs.Empty);
         private void StartInteraction() => OnInteractionStarted?.Invoke(this, EventArgs.Empty);
@@ -27,7 +37,8 @@ namespace Assets.Scripts.SelectableObject.Interactions
             FinishInteraction();
         }
 
-        public abstract void Begin();
+        protected abstract void Begin();
+
         public abstract bool CanActivate();
 
         public virtual OutlineMode OutlineMode => OutlineMode.Always;

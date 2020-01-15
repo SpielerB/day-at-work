@@ -7,19 +7,40 @@ using UnityEngine;
 
 namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
 {
+    /**
+     * This class manages the NPC dialogues
+     */
     [SuppressMessage("ReSharper", "InconsistentNaming")]
     public class GenericNPCConversation : NPCDialogue
     {
         private DialogueTree root;
         private DialogueTree current;
 
+        /**
+         * The corresponding NPC interaction
+         */
         public NPCInteraction parent;
-        public TextMeshProUGUI textBox;
-        public GameObject dialogueBox;
-        public TextMeshProUGUI[] buttons = new TextMeshProUGUI[2];
-        [TextArea(3, 10)]
-        public string conversation = "This text will appear in a text area that automatically expands";
 
+        /**
+         * The NPC text area
+         */
+        public TextMeshProUGUI textBox;
+
+        /**
+         * The whole dialogue box
+         */
+        public GameObject dialogueBox;
+
+        /**
+         * The "buttons" for the user responses
+         */
+        public TextMeshProUGUI[] buttons = new TextMeshProUGUI[2];
+
+        /**
+         * The actual conversation
+         */
+        [TextArea(3, 10)]
+        public string conversation = "This text will appear in a text area that automatically expands;";
 
         public override void ConvStart()
         {
@@ -34,6 +55,9 @@ namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
             dialogueBox.SetActive(true);
         }
 
+        /**
+         * Construct the dialogue tree
+         */
         private void CreateDialogue()
         {
             textBox.SetText(current.text);
@@ -49,10 +73,7 @@ namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
             }
         }
 
-        public override bool IsTalking()
-        {
-            return true;
-        }
+        public override bool IsTalking() => true;
 
 
         /**
@@ -81,11 +102,24 @@ namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
             dialogueBox.SetActive(false);
         }
 
-
+        /**
+         * This class is used to construct the dialogue tree.
+         */
         private class DialogueTree
         {
+            /**
+             * The title of this node
+             */
             public readonly string title;
+
+            /**
+             * The text contained in this node
+             */
             public readonly string text;
+
+            /**
+             * The next conversation options after hitting this node
+             */
             public readonly DialogueTree[] next;
 
             private DialogueTree(string title, string text, DialogueTree[] next)
@@ -95,6 +129,9 @@ namespace Assets.Scripts.SelectableObject.NPCs.State_Machines
                 this.title = title;
             }
 
+            /**
+             * Constructs the tree based on the current element
+             */
             public static DialogueTree[] GetTree(Queue<string> elements, int depth)
             {
                 if (!elements.Any()) return null;

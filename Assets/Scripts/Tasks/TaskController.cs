@@ -5,17 +5,32 @@ using UnityEngine;
 
 namespace Assets.Scripts.Tasks
 {
+    /**
+     * Manages the tasks, updates the task list and notifies the SimulationController about time changes
+     */
     public class TaskController : MonoBehaviour
     {
-
+        /**
+         * The text area for the task list
+         */
         public TextMeshProUGUI taskList;
+
+        /**
+         * The initial task
+         */
         public Task initialTask;
 
+        /**
+         * Shows the task list
+         */
         public void ShowTaskList()
         {
             taskList.gameObject.SetActive(true);
         }
 
+        /**
+         * Hides the task list
+         */
         public void HideTaskList()
         {
             taskList.gameObject.SetActive(false);
@@ -34,6 +49,9 @@ namespace Assets.Scripts.Tasks
             UpdateTaskList();
         }
 
+        /**
+         * Updates the task list
+         */
         private void UpdateTaskList()
         {
             var sb = new StringBuilder();

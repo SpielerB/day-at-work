@@ -9,13 +9,26 @@ using UnityEngine;
 
 namespace Assets.Scripts.Computer
 {
+    /**
+     * Manages the editor window on the simulated computer
+     */
     public class EditorWindow : ComputerWindow
     {
+        /**
+         * Defines the content to be written to the window
+         */
         [TextArea(3, 10)] 
         public string contentToWrite;
+
+        /**
+         * Defines how many characters are to be written per second
+         */
         [Min(1)]
         public int charsPerSecond = 12;
-        public float closingDelay = 4;
+
+        /**
+         * The text area where the text will be written to
+         */
         public TextMeshProUGUI target;
 
         private int currentIndex;
@@ -27,10 +40,7 @@ namespace Assets.Scripts.Computer
         {
             if (currentIndex >= contentToWrite.Length)
             {
-                if ((timer += Time.deltaTime) >= closingDelay)
-                {
-                    canClose = true;
-                }
+                canClose = true;
             }
             else
             {

@@ -5,10 +5,20 @@ using Assets.Scripts.Tasks;
 
 namespace Assets.Scripts.SelectableObject.Interactions
 {
+    /**
+     * Handles interacting with NPCs
+     */
     [SuppressMessage("ReSharper", "InconsistentNaming")]
     public class NPCInteraction : TaskInteraction
     {
+        /**
+         * The corresponding dialogue
+         */
         public NPCDialogue machine;
+
+        /**
+         * The required movement node
+         */
         public MovementNode requiredPosition;
 
 
@@ -40,7 +50,7 @@ namespace Assets.Scripts.SelectableObject.Interactions
             }
         }
 
-        public override void Begin()
+        protected override void Begin()
         {
             TaskController.HideTaskList();
             OnInteractionFinished += OnFinish;
@@ -52,6 +62,9 @@ namespace Assets.Scripts.SelectableObject.Interactions
             return requiredPosition != null && requiredPosition == Player.CurrentMovementPoint;
         }
 
+        /**
+         * Listener method for finishing the conversation
+         */
         private void OnFinish(object sender, EventArgs args)
         {
             OnInteractionFinished -= OnFinish;

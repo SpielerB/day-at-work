@@ -2,9 +2,19 @@
 
 namespace Assets.Scripts.SelectableObject.Interactions
 {
+    /**
+     * Handles interaction with sound creating objects
+     */
     public class SoundInteraction : TaskInteraction
     {
+        /**
+         * The audio to be played
+         */
         public AudioSource audioSource;
+        
+        /**
+         * The required movement node
+         */
         public MovementNode requiredPosition;
 
         private PlayerController player;
@@ -21,7 +31,7 @@ namespace Assets.Scripts.SelectableObject.Interactions
             }
         }
 
-        public override void Begin()
+        protected override void Begin()
         {
             audioSource.Play();
         }

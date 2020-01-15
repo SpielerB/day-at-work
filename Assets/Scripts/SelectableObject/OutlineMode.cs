@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Assets.Scripts.SelectableObject
 {
+    /**
+     * The mode which defines how the outline around selectables is drawn
+     */
     public enum OutlineMode
     {
         Always,
