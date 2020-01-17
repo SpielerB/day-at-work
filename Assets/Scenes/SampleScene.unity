@@ -201,18 +201,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
---- !u!114 &6579745 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8177650110895536736, guid: 20c8590d7dcb0324faaf7d822259e38b,
-    type: 3}
-  m_PrefabInstance: {fileID: 785483727}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95dd3dbbb5ec3a14c9a55ab35d4f3e24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &20077562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400048, guid: d8b52ff15416a834fa29d51b5c330b74,
@@ -2867,6 +2855,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1752651164}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &370217637 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4596974283823763302, guid: 20c8590d7dcb0324faaf7d822259e38b,
+    type: 3}
+  m_PrefabInstance: {fileID: 785483727}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95dd3dbbb5ec3a14c9a55ab35d4f3e24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &382890143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5f5c6baac71fa0a4bb9dd9d91c1b2c53,
@@ -13978,6 +13978,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SIMULATION
       objectReference: {fileID: 0}
+    - target: {fileID: 8177650110895536736, guid: 20c8590d7dcb0324faaf7d822259e38b,
+        type: 3}
+      propertyPath: movementNode
+      value: 
+      objectReference: {fileID: 1494257029}
     - target: {fileID: 1766448989620424645, guid: 20c8590d7dcb0324faaf7d822259e38b,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -14070,7 +14075,7 @@ PrefabInstance:
     - target: {fileID: 914904932, guid: 20c8590d7dcb0324faaf7d822259e38b, type: 3}
       propertyPath: initialTask
       value: 
-      objectReference: {fileID: 6579745}
+      objectReference: {fileID: 370217637}
     - target: {fileID: 4596974283823763302, guid: 20c8590d7dcb0324faaf7d822259e38b,
         type: 3}
       propertyPath: movementNode
@@ -14114,11 +14119,6 @@ PrefabInstance:
       propertyPath: interaction
       value: 
       objectReference: {fileID: 499023811}
-    - target: {fileID: 8177650110895536736, guid: 20c8590d7dcb0324faaf7d822259e38b,
-        type: 3}
-      propertyPath: movementNode
-      value: 
-      objectReference: {fileID: 1494257029}
     - target: {fileID: 2603615622156473526, guid: 20c8590d7dcb0324faaf7d822259e38b,
         type: 3}
       propertyPath: initialMovementPoint
