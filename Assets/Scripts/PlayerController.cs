@@ -8,6 +8,9 @@ namespace Assets.Scripts
      */
     public class PlayerController : MonoBehaviour
     {
+        Vector2 rotation = new Vector2(0, 0);
+        public float speed = 3;
+
         /**
          * Where the player is positioned at the beginning of the simulation
          */
@@ -25,6 +28,8 @@ namespace Assets.Scripts
             {
                 MoveTo(initialMovementPoint);
             }
+
+            rotation = transform.eulerAngles;
         }
 
         /**
@@ -59,12 +64,14 @@ namespace Assets.Scripts
 
             point.gameObject.SetActive(false);
             CurrentMovementPoint = point;
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 
         [SuppressMessage("ReSharper", "UnusedMember.Local")]
         private void Update()
         {
-#if UNITY_EDITOR
             // This is a workaround to use unity with remote desktop clients and still be able to look around
             if (Input.GetKey(KeyCode.LeftArrow))
             {
@@ -82,7 +89,9 @@ namespace Assets.Scripts
             {
                 transform.Rotate(Vector3.left, 40 * Time.deltaTime);
             }
-#endif
+            rotation.y += Input.GetAxis("Mouse X");
+            rotation.x += -Input.GetAxis("Mouse Y");
+            transform.eulerAngles = (Vector2)rotation * speed;
         }
     }
 }
